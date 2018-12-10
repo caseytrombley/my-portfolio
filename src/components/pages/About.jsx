@@ -1,8 +1,8 @@
 import React, {Component} from 'react';
 import Navigation from "../navigation";
 import Footer from "../footer";
-import _ from "lodash";
-import {Container, Icon, Image, Menu, Visibility} from "semantic-ui-react";
+import {Col, Grid, Row} from "react-bootstrap";
+
 
 
 const Paragraph = () => (
@@ -25,23 +25,29 @@ class About extends Component {
 
     render() {
         return (
-            <div>
+            <React.Fragment>
 
                 <Navigation/>
 
-                <Container >
-                    <Paragraph />
-                    <Paragraph />
-                    <Paragraph />
-                    <Paragraph />
-                    <Paragraph />
-                    <Paragraph />
-                    <Paragraph />
-                </Container>
+                <Grid>
+                    <Row className="show-grid">
+                        <Col xs={12} md={12}>
+                            <Paragraph/>
+                            <Paragraph/>
+                            <Paragraph/>
+                            <Paragraph/>
+                            <Paragraph/>
+                            <Paragraph/>
+                            <Paragraph/>
+
+                        </Col>
+
+                    </Row>
+                </Grid>
 
                 <Footer/>
 
-            </div>
+            </React.Fragment>
         );
     }
 }
