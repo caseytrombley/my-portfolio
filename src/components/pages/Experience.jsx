@@ -27,8 +27,6 @@ class Experience extends Component {
         return (
             <React.Fragment>
 
-                <Navigation/>
-
                 <main>
                     <Grid>
                         <Row>

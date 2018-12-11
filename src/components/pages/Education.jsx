@@ -6,7 +6,6 @@ class Education extends Component {
         return (
             <div>
 
-                <Navigation/>
 
                 Education
             </div>

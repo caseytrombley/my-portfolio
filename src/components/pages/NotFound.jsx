@@ -6,8 +6,6 @@ class NotFound extends Component {
         return (
             <div>
 
-                <Navigation/>
-
 
                 Page Not Found :(
             </div>

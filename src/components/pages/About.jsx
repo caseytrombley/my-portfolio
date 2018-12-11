@@ -27,25 +27,30 @@ class About extends Component {
         return (
             <React.Fragment>
 
-                <Navigation/>
-
-                <main>
-                    <Grid>
-                        <Row>
-                            <Col xs={12} md={12}>
-
-                                <h1>About me</h1>
-                                
-                                <Paragraph/>
-                                <Paragraph/>
-                                <Paragraph/>
-                                <Paragraph/>
+                <main className="fullscreen">
 
 
-                            </Col>
+                    <div className="title">Welcome to Page Transition App!</div>
+                    <section>
+                        <p>Click the links on header to change routes!</p>
+                    </section>
 
-                        </Row>
-                    </Grid>
+                    {/*<Grid>*/}
+                        {/*<Row>*/}
+                            {/*<Col xs={12} md={12}>*/}
+
+                                {/*<h1>About me</h1>*/}
+
+                                {/*<Paragraph/>*/}
+                                {/*<Paragraph/>*/}
+                                {/*<Paragraph/>*/}
+                                {/*<Paragraph/>*/}
+
+
+                            {/*</Col>*/}
+
+                        {/*</Row>*/}
+                    {/*</Grid>*/}
                 </main>
 
                 <Footer/>

@@ -6,8 +6,6 @@ class Skills extends Component {
         return (
             <div>
 
-                <Navigation/>
-
                 Skills
             </div>
         );

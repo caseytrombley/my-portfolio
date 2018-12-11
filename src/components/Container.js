@@ -3,10 +3,13 @@ import styled from "styled-components";
 import { Switch, Route, withRouter } from "react-router-dom";
 import { TransitionGroup, CSSTransition } from "react-transition-group";
 
-import Home from "./Home";
-import First from "./First";
-import Second from "./Second";
-import Third from "./Third";
+import About from './pages/About';
+import Contact from './pages/Contact';
+import Experience from './pages/Experience';
+import Education from './pages/Education';
+import Skills from './pages/Skills';
+import Portfolio from './pages/Portfolio';
+import NotFound from './pages/NotFound';
 
 function Container({ location }) {
     return (
@@ -19,10 +22,18 @@ function Container({ location }) {
                 >
                     <section className="route-section">
                         <Switch location={location}>
-                            <Route exact path="/" component={Home} />
-                            <Route path="/first" component={First} />
-                            <Route path="/second" component={Second} />
-                            <Route path="/third" component={Third} />
+                            <Route exact path='/' component={About}/>
+                            <Route exact path='/about' component={About}/>
+                            <Route exact path='/contact' component={Contact}/>
+                            <Route exact path='/experience' component={Experience}/>
+                            <Route exact path='/education' component={Education}/>
+                            <Route exact path='/skills' component={Skills}/>
+                            <Route exact path='/portfolio' component={Portfolio}/>
+                            <Route exact path='/contact' component={Contact}/>
+
+                            {/* when none of the above match, <NoMatch> will be rendered */}
+                            <Route component={NotFound}/>
+
                         </Switch>
                     </section>
                 </CSSTransition>
