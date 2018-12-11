@@ -4,9 +4,9 @@ import AppRoutes from "./router/app_routes";
 class App extends Component {
   render() {
     return (
-      <div className="App">
+      <React.Fragment>
         <AppRoutes/>
-      </div>
+      </React.Fragment>
     );
   }
 }

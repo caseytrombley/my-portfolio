@@ -29,21 +29,24 @@ class About extends Component {
 
                 <Navigation/>
 
-                <Grid>
-                    <Row className="show-grid">
-                        <Col xs={12} md={12}>
-                            <Paragraph/>
-                            <Paragraph/>
-                            <Paragraph/>
-                            <Paragraph/>
-                            <Paragraph/>
-                            <Paragraph/>
-                            <Paragraph/>
+                <main>
+                    <Grid>
+                        <Row>
+                            <Col xs={12} md={12}>
 
-                        </Col>
+                                <h1>About me</h1>
+                                
+                                <Paragraph/>
+                                <Paragraph/>
+                                <Paragraph/>
+                                <Paragraph/>
 
-                    </Row>
-                </Grid>
+
+                            </Col>
+
+                        </Row>
+                    </Grid>
+                </main>
 
                 <Footer/>
 
