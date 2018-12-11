@@ -1,5 +1,4 @@
 import React, {Component} from 'react';
-import Footer from "../footer";
 import {Col, Grid, Row} from "react-bootstrap";
 
 
@@ -44,7 +43,6 @@ class Experience extends Component {
                     </Grid>
                 </main>
 
-                <Footer/>
 
             </React.Fragment>
         );
