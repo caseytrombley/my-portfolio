@@ -31,13 +31,13 @@ class Header extends React.Component {
                                     <polygon className='st2' points='0,56 0,167.3 29.2,150.7 29.3,74.8' />
                                 </svg>
 
-                                <div id="box-inner">
-                                    <div id="front"></div>
-                                    <div id="back"></div>
-                                    <div id="top"></div>
-                                    <div id="bottom"></div>
-                                    <div id="left"></div>
-                                    <div id="right"></div>
+                                <div className="box-inner">
+                                    <div className="front"></div>
+                                    <div className="back"></div>
+                                    <div className="top"></div>
+                                    <div className="bottom"></div>
+                                    <div className="left"></div>
+                                    <div className="right"></div>
                                 </div>
 
                             </NavLink>
@@ -106,6 +106,18 @@ class Header extends React.Component {
                                     Portfolio
                                 </NavLink>
                             </li>
+
+                            <li>
+                                <NavLink
+                                    exact
+                                    activeClassName="active-nav"
+                                    className="nav-link"
+                                    to="/contact"
+                                >
+                                    Contact
+                                </NavLink>
+                            </li>
+
 
                         </Nav>
                     </Navbar.Collapse>
