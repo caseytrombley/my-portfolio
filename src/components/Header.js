@@ -1,24 +1,14 @@
 import React from "react";
-
 import {NavLink} from "react-router-dom";
 import {Nav, Navbar} from "react-bootstrap";
-
-
-
 
 class Header extends React.Component {
 
     render() {
 
-
-
         return (
 
-
-
-
             <header>
-
                 <Navbar inverse collapseOnSelect>
                     <Navbar.Header>
                         <Navbar.Brand>
@@ -52,7 +42,10 @@ class Header extends React.Component {
 
                             </NavLink>
                         </Navbar.Brand>
-                        <Navbar.Toggle />
+                        <Navbar.Toggle className="navbar-toggle x"/>
+
+
+
                     </Navbar.Header>
                     <Navbar.Collapse>
 

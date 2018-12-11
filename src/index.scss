@@ -48,10 +48,6 @@ main {
   .navbar-brand {
     height: $logoHeight;
     padding-top: 5px;
-    font-family: 'Londrina Outline', cursive;
-    //font-weight: bold;
-    font-size: 35px;
-    color: $dark-aqua;
   }
   .navbar-collapse {
     border: 0;
@@ -82,7 +78,6 @@ main {
         }
       }
     }
-
 
     .active-nav {
 
@@ -123,6 +118,63 @@ main {
       }
     }
 
+  }
+}
+
+.navbar-toggle {
+  padding-top: 15px;
+  border: none;
+  background: transparent !important;
+  .icon-bar {
+    width: 22px;
+    -webkit-transition: all 0.2s;
+    transition: all 0.2s;
+  }
+  &:hover {
+    background: transparent !important;
+  }
+  &.x {
+    .icon-bar {
+      &:nth-child(2) {
+        -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        transform: rotate(45deg);
+        -webkit-transform-origin: 10% 10%;
+        -ms-transform-origin: 10% 10%;
+        transform-origin: 10% 10%;
+      }
+      &:nth-child(3) {
+        opacity: 0;
+        filter: alpha(opacity=0);
+      }
+      &:nth-child(4) {
+        -webkit-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+        transform: rotate(-45deg);
+        -webkit-transform-origin: 10% 90%;
+        -ms-transform-origin: 10% 90%;
+        transform-origin: 10% 90%;
+      }
+    }
+
+    &.collapsed {
+      .icon-bar {
+        &:nth-child(2) {
+          -webkit-transform: rotate(0);
+          -ms-transform: rotate(0);
+          transform: rotate(0);
+        }
+        &:nth-child(3) {
+          opacity: 1;
+          filter: alpha(opacity=100);
+        }
+        &:nth-child(4) {
+          -webkit-transform: rotate(0);
+          -ms-transform: rotate(0);
+          transform: rotate(0);
+        }
+      }
+    }
   }
 }
 
@@ -188,24 +240,12 @@ main {
   }
 }
 
-
 @keyframes Rotate{
   0%{ transform: rotateY(0deg) rotateZ(45deg); }
 
   100%{ transform: rotateY(360deg) rotateZ(45deg); }
 }
 
-
-
-//@keyframes spin {
-//  0% {
-//    transform: rotate3d(0, 0, 0, 0deg);
-//  }
-//
-//  100% {
-//    transform: rotate3d(0, 1, 0, 360deg);
-//  }
-//}
 
 // Pages
 .fullscreen {
