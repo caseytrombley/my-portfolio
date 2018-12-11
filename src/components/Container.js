@@ -3,6 +3,7 @@ import styled from "styled-components";
 import { Switch, Route, withRouter } from "react-router-dom";
 import { TransitionGroup, CSSTransition } from "react-transition-group";
 
+import Home from './pages/Home';
 import About from './pages/About';
 import Contact from './pages/Contact';
 import Experience from './pages/Experience';
@@ -22,7 +23,7 @@ function Container({ location }) {
                 >
                     <section className="route-section">
                         <Switch location={location}>
-                            <Route exact path='/' component={About}/>
+                            <Route exact path='/' component={Home}/>
                             <Route exact path='/about' component={About}/>
                             <Route exact path='/contact' component={Contact}/>
                             <Route exact path='/experience' component={Experience}/>
