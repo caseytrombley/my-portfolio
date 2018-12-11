@@ -48,7 +48,8 @@ class Navigation extends React.Component{
                             <li>
                                 <NavLink
                                     exact
-                                    className={default_path ? "active-nav nav-link" : 'nav-link'} to="/about"
+                                    className={default_path ? "active-nav nav-link" : 'nav-link'}
+                                    to="/about"
                                 >
                                     About
                                 </NavLink>
@@ -58,7 +59,8 @@ class Navigation extends React.Component{
                                 <NavLink
                                     exact
                                     activeClassName="active-nav"
-                                    className="nav-link" to="/experience"
+                                    className="nav-link"
+                                    to="/experience"
                                 >
                                     Work Experience
                                 </NavLink>
