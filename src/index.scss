@@ -1,4 +1,6 @@
 
+@import "sass/mixins";
+
 @import url('https://fonts.googleapis.com/css?family=Londrina+Outline|Londrina+Solid');
 
 body {
@@ -18,17 +20,14 @@ code {
 }
 
 //pin the footer to bottom always
-#root {
+.route-section {
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
+  min-height: calc(100vh - #{$navHeight});
 }
 footer {
   margin: auto auto 0 auto;
 }
-
-
-$logoHeight: 60px;
 
 header {
   background: #222;
@@ -38,7 +37,7 @@ main {
 }
 
 .navbar-inverse {
-  min-height: 69px;
+  min-height: $navHeight;
   margin-bottom: 0;
   background-color: #222;
   border: 0;
