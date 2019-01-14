@@ -2,52 +2,14 @@ import React from "react";
 import {NavLink} from "react-router-dom";
 import {Nav, Navbar} from "react-bootstrap";
 import Plx from 'react-plx';
-
-
-const headerData = [
-    {
-        start: 0,
-        end: 80,
-        properties: [
-
-            {
-                startValue: 82,
-                endValue: 69,
-                property: 'height',
-            },
-        ],
-    },
-];
-
-const logoData = [
-    {
-        start: 0,
-        end: 50,
-        properties: [
-            {
-                startValue: 1.2,
-                endValue: 1,
-                property: 'scale',
-            },
-        ],
-    },
-];
-
-const navData = [
-    {
-        start: 0,
-        end: 50,
-        properties: [
-            {
-                startValue: 1.2,
-                endValue: 1,
-                property: 'scale',
-            },
-        ],
-    },
-];
+import { headerData, logoData, navData} from '../data/parallax';
 
 class Header extends React.Component {
+
+    closeMenu = () => {
+        //document.querySelector('.collapse').classList.add('hide');
+        document.querySelector('.navbar-toggle').click();
+    };
 
     render() {
 
@@ -63,7 +25,7 @@ class Header extends React.Component {
 
                             <Plx
                                 parallaxData={ logoData }
-
+                                id="logo"
                             >
                                 <Navbar.Brand>
                                     <NavLink exact to="/">
@@ -106,6 +68,7 @@ class Header extends React.Component {
                         </Navbar.Header>
                         <Plx
                             parallaxData={ navData }
+                            id="navbar"
 
                         >
                             <Navbar.Collapse>
@@ -116,6 +79,7 @@ class Header extends React.Component {
                                     <li>
                                         <NavLink
                                             exact
+                                            onClick={this.closeMenu}
                                             activeClassName="active-nav"
                                             className="nav-link"
                                             to="/about"
@@ -127,6 +91,7 @@ class Header extends React.Component {
                                     <li>
                                         <NavLink
                                             exact
+                                            onClick={this.closeMenu}
                                             activeClassName="active-nav"
                                             className="nav-link"
                                             to="/experience"
@@ -138,6 +103,7 @@ class Header extends React.Component {
                                     <li>
                                         <NavLink
                                             exact
+                                            onClick={this.closeMenu}
                                             activeClassName="active-nav"
                                             className="nav-link"
                                             to="/education"
@@ -149,6 +115,7 @@ class Header extends React.Component {
                                     <li>
                                         <NavLink
                                             exact
+                                            onClick={this.closeMenu}
                                             activeClassName="active-nav"
                                             className="nav-link"
                                             to="/skills"
@@ -160,6 +127,7 @@ class Header extends React.Component {
                                     <li>
                                         <NavLink
                                             exact
+                                            onClick={this.closeMenu}
                                             activeClassName="active-nav"
                                             className="nav-link"
                                             to="/portfolio"
@@ -171,6 +139,7 @@ class Header extends React.Component {
                                     <li>
                                         <NavLink
                                             exact
+                                            onClick={this.closeMenu}
                                             activeClassName="active-nav"
                                             className="nav-link"
                                             to="/contact"

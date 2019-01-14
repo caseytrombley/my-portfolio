@@ -15,7 +15,8 @@ body {
   background: $lightest;
 }
 main {
-  padding: 144px 0 $padding-big;
+  padding: 100px 0 $padding-big;
+  border-bottom: $padding solid rgba(0,0,0,.1);
 }
 
 // Pages
