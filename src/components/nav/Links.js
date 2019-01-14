@@ -1,11 +1,12 @@
 import React from 'react';
 import {NavLink} from "react-router-dom";
 
-const Links = () => {
+const Links = (props) => {
     return (
         <React.Fragment>
             <li>
                 <NavLink
+                    onClick={props.onClick}
                     exact
                     activeClassName="active-nav"
                     className="nav-link"
@@ -17,6 +18,7 @@ const Links = () => {
 
             <li>
                 <NavLink
+                    onClick={props.onClick}
                     exact
                     activeClassName="active-nav"
                     className="nav-link"
@@ -28,6 +30,7 @@ const Links = () => {
 
             <li>
                 <NavLink
+                    onClick={props.onClick}
                     exact
                     activeClassName="active-nav"
                     className="nav-link"
@@ -39,6 +42,7 @@ const Links = () => {
 
             <li>
                 <NavLink
+                    onClick={props.onClick}
                     exact
                     activeClassName="active-nav"
                     className="nav-link"
@@ -50,6 +54,7 @@ const Links = () => {
 
             <li>
                 <NavLink
+                    onClick={props.onClick}
                     exact
                     activeClassName="active-nav"
                     className="nav-link"
@@ -61,6 +66,7 @@ const Links = () => {
 
             <li>
                 <NavLink
+                    onClick={props.onClick}
                     exact
                     activeClassName="active-nav"
                     className="nav-link"

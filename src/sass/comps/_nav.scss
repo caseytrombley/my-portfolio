@@ -15,6 +15,10 @@
 #logo {
 
   transform-origin: top left;
+  padding-left: $padding;
+  @include breakpoint(sm) {
+    padding: 0;
+  }
 
 }
 .navbar {
@@ -38,7 +42,8 @@
     box-shadow: none;
   }
   .navbar-nav {
-    @media (min-width: 768px) {
+
+    @include breakpoint(sm) {
       margin-top: 3px;
     }
     background:
