@@ -1,5 +1,16 @@
+#nav {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 99;
+  transition: 0.4s;
+  background: $dark;
+}
+
 .navbar-inverse {
-  min-height: $navHeight;
+  //min-height: $navHeight;
+
+  transform-origin:bottom left;
   margin-bottom: 0;
   background-color: #222;
   border: 0;
