@@ -6,10 +6,10 @@ import Container from "./components/Container";
 
 const App = () => (
     <Router>
-        <div>
+        <React.Fragment>
             <Header />
             <Container />
-        </div>
+        </React.Fragment>
     </Router>
 );
 
