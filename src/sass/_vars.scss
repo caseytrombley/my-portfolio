@@ -1,0 +1,30 @@
+
+$navHeight: 69px;
+$logoHeight: 60px;
+
+$light: #f9f9f9;
+$lightest: #fff;
+
+$gray: #3b3634;
+$grayest: #303030;
+
+$dark: #222;
+$darkest: #000;
+
+$rainbow-red:     #ee293f20;
+$rainbow-orange:  #ff9f0020;
+$rainbow-yellow:  #fffd0020;
+$rainbow-green:   #00ff0e20;
+$rainbow-blue:    #00caff20;
+$rainbow-indigo:  #4c29ee20;
+$rainbow-violet:  #e729ee20;
+
+$rainbow: (
+        $rainbow-red,
+        $rainbow-orange,
+        $rainbow-yellow,
+        $rainbow-green,
+        $rainbow-blue,
+        $rainbow-indigo,
+        $rainbow-violet
+);

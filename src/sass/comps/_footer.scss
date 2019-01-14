@@ -1,0 +1,15 @@
+//pin the footer to bottom always
+.route-section {
+  display: flex;
+  flex-direction: column;
+  min-height: calc(100vh - #{$navHeight});
+}
+footer {
+  margin: auto 0 0 0;
+  padding: 15px;
+  @include breakpoint(sm) {
+    padding: 30px;
+  }
+  background: $dark;
+  color: white;
+}

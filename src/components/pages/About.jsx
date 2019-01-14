@@ -10,7 +10,7 @@ class About extends Component {
         return (
             <React.Fragment>
 
-                <main className="">
+                <main className="about">
 
 
 
