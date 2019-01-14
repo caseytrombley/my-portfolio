@@ -45,21 +45,21 @@ function Container({ location }) {
 
 const Wrapper = styled.div`
   .fade-enter {
-    opacity: 0.01;
+    left: -100%;
   }
 
   .fade-enter.fade-enter-active {
-    opacity: 1;
-    transition: opacity 300ms ease-in;
+    left: 0;
+    transition: 300ms ease-in;
   }
 
   .fade-exit {
-    opacity: 1;
+    left: 0;
   }
 
   .fade-exit.fade-exit-active {
-    opacity: 0.01;
-    transition: opacity 300ms ease-in;
+    left: -100%;
+    transition: 300ms ease-in;
   }
 
   div.transition-group {
@@ -72,6 +72,11 @@ const Wrapper = styled.div`
     top: 0;
     left: 0;
   }
+  
+  @keyframes slide {
+    100% { left: 0; }
+  }
+    
 `;
 
 export default withRouter(Container);

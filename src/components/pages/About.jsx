@@ -35,8 +35,8 @@ class About extends Component {
                                             below—its contents, the creator, etc. Make it short and sweet, but not too
                                             short so folks don't simply skip over it entirely.</p>
                                         <p>
-                                            <a href="#" className="btn btn-primary my-2">Main call to action</a>
-                                            <a href="#" className="btn btn-secondary my-2">Secondary action</a>
+                                            <a href="/" className="btn btn-primary my-2">Main call to action</a>
+                                            <a href="/" className="btn btn-secondary my-2">Secondary action</a>
                                         </p>
                                     </div>
                                 </section>
@@ -64,7 +64,7 @@ class About extends Component {
                                                         <p className="card-text">Some quick example text to build on
                                                             the card title and make up the bulk of the card's
                                                             content.</p>
-                                                        <a href="#" className="btn btn-primary">Go somewhere</a>
+                                                        <a href="/" className="btn btn-primary">Go somewhere</a>
                                                     </div>
                                                 </div>
 
