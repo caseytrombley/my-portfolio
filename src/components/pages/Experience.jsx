@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import {Col, Grid, Row} from "react-bootstrap";
+import Footer from "../Footer";
 
 
 const Paragraph = () => (
@@ -24,7 +25,7 @@ class Experience extends Component {
         return (
             <React.Fragment>
 
-                <main>
+                <main className="experience">
                     <Grid>
                         <Row>
                             <Col xs={12} md={12}>
@@ -43,6 +44,7 @@ class Experience extends Component {
                     </Grid>
                 </main>
 
+                <Footer/>
 
             </React.Fragment>
         );

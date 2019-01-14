@@ -11,10 +11,10 @@
 @import url('https://fonts.googleapis.com/css?family=Londrina+Outline|Londrina+Solid');
 
 body {
-  background: $darkest;
+  background: $lightest;
 }
 main {
-  padding-top: 20px;
+  padding: 30px 0;
 }
 
 // Pages
@@ -40,8 +40,20 @@ main {
 }
 
 .about {
-  background: $rainbow-red;
+  background: $rainbow-bright-red;
+}
+.experience {
+  background: $rainbow-bright-orange;
+}
+.education {
+  background: $rainbow-bright-yellow;
+}
+.skills {
+  background: $rainbow-bright-green;
 }
 .portfolio {
-  background: $rainbow-blue;
+  background: $rainbow-bright-blue;
+}
+.contact {
+  background: $rainbow-bright-indigo;
 }
