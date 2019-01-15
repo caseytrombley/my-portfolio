@@ -47,3 +47,22 @@ $rainbow-bright-green:   #00ff0e;
 $rainbow-bright-blue:    #00caff;
 $rainbow-bright-indigo:  #4c29ee;
 $rainbow-bright-violet:  #e729ee;
+
+$rainbow-bright: (
+        $rainbow-bright-red,
+        $rainbow-bright-orange,
+        $rainbow-bright-yellow,
+        $rainbow-bright-green,
+        $rainbow-bright-blue,
+        $rainbow-bright-indigo,
+        $rainbow-bright-violet
+);
+
+$grays:
+        #DCDCDC40
+        #D3D3D340
+        #C0C0C040
+        #A9A9A940
+        #80808040
+        #69696940
+        #55555540;

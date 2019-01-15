@@ -1,5 +1,5 @@
 import React from 'react';
-import {logoData, navData} from "../../data/parallax";
+import {brandData, navData} from "../../data/parallax";
 
 import Plx from "react-plx";
 import {NavLink} from "react-router-dom";
@@ -13,7 +13,7 @@ const NavDesktop = () => {
                 <div className="navbar-header">
 
                     <Plx
-                        parallaxData={ logoData }
+                        parallaxData={ brandData }
                         id="logo"
                     >
 

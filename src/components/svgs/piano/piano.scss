@@ -1,0 +1,60 @@
+@import "../../../sass/mixins";
+@import "../../../sass/vars";
+
+#piano-keys {
+  max-width: 450px;
+
+  rect {
+    transform-origin: 50% 50%;
+
+    //ivory keys
+    @for $i from 1 through 7 {
+      &:nth-child(#{$i})  {
+        //transform: rotate(nth($list-random, $i)*1deg);
+        //fill: nth($grays, $i);
+        fill: nth($rainbow-bright, $i);
+
+        transform:
+                //rotate(random(720) - 360 + deg)
+                translateX(random(2000) - 1000 + px)
+                translateY(random(2000) - 1000 + px)
+      ;
+        animation: implode random(700)+ms forwards;
+        animation-delay: 250ms;
+        animation-timing-function: ease-in-out;
+        opacity: 0;
+
+      }
+    }
+
+    //chromatic keys
+    @for $i from 8 through 12 {
+      &:nth-child(#{$i})  {
+
+        transform: translateY(random(3000) - 2000 + px);
+        animation: drop random(650)+ms forwards;
+        animation-delay: 350ms;
+        opacity: 0.1;
+      }
+    }
+
+    @keyframes implode {
+
+      to {
+        transform: rotate(0deg) translateY(0) translateX(0);
+        opacity: 0.3;
+      }
+    }
+    @keyframes drop {
+
+      to {
+        transform: translateY(0px);
+        opacity: 0.4;
+      }
+    }
+
+
+  }
+
+
+}

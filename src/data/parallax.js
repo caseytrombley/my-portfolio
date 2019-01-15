@@ -13,7 +13,7 @@ export const headerData = [
     },
 ];
 
-export const logoData = [
+export const brandData = [
     {
         start: 0,
         end: 50,

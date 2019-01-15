@@ -2,6 +2,10 @@ import React, {Component} from 'react';
 import {Col, Grid, Row} from "react-bootstrap";
 import Footer from "../Footer";
 
+import Gallery from 'react-grid-gallery';
+import {logosData, designData} from "../../data/images";
+
+
 class Portfolio extends Component {
     render() {
         return (
@@ -12,75 +16,34 @@ class Portfolio extends Component {
 
                     <Grid>
                         <Row>
-                            <Col xs={6} md={4}>
+                            <Col xs={12} md={3}>
 
-
-                                <div className="thumbnail">
-                                    <img src="..." alt="..."/>
-                                    <div className="caption">
-                                        <h3>Thumbnail label</h3>
-                                        <p>...</p>
-                                        <p>
-                                            <a href="/" className="btn btn-primary" role="button">
-                                                Button
-                                            </a>
-                                            <a href="/" className="btn btn-default" role="button">Button</a>
-                                        </p>
-                                    </div>
-                                </div>
-
-
+                                <h2>Logos</h2>
 
                             </Col>
 
+                            <Col xs={12} md={9}>
+
+                                <Gallery images={logosData}/>
+
+                            </Col>
                         </Row>
 
                         <Row>
-                            <Col xs={6} md={4}>
+                            <Col xs={12} md={3}>
 
-
-                                <div className="thumbnail">
-                                    <img src="..." alt="..."/>
-                                    <div className="caption">
-                                        <h3>Thumbnail label</h3>
-                                        <p>...</p>
-                                        <p>
-                                            <a href="/" className="btn btn-primary" role="button">
-                                                Button
-                                            </a>
-                                            <a href="/" className="btn btn-default" role="button">Button</a>
-                                        </p>
-                                    </div>
-                                </div>
-
-
+                                <h2>Websites</h2>
 
                             </Col>
 
-                        </Row>
-                        <Row>
-                            <Col xs={6} md={4}>
+                            <Col xs={12} md={9}>
 
-
-                                <div className="thumbnail">
-                                    <img src="..." alt="..."/>
-                                    <div className="caption">
-                                        <h3>Thumbnail label</h3>
-                                        <p>...</p>
-                                        <p>
-                                            <a href="/" className="btn btn-primary" role="button">
-                                                Button
-                                            </a>
-                                            <a href="/" className="btn btn-default" role="button">Button</a>
-                                        </p>
-                                    </div>
-                                </div>
-
-
+                                <Gallery images={designData}/>
 
                             </Col>
-
                         </Row>
+
+
                     </Grid>
                 </main>
 

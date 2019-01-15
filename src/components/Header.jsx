@@ -9,11 +9,6 @@ import NavDesktop from './nav/NavDesktop';
 
 class Header extends React.Component {
 
-    // closeMenu = () => {
-    //     //document.querySelector('.collapse').classList.add('hide');
-    //     document.querySelector('.navbar-toggle').click();
-    // };
-
     render() {
 
         return (
@@ -24,7 +19,7 @@ class Header extends React.Component {
                 <header>
                     <Media>
                         {({ breakpoints, currentBreakpoint }) =>
-                            breakpoints[currentBreakpoint] > breakpoints.tablet ? (
+                            breakpoints[currentBreakpoint] > breakpoints.desktop ? (
                                 <NavDesktop/>
                             ) : (
                                 <NavMobile />

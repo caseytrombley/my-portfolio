@@ -1,6 +1,6 @@
 import React from 'react';
 import Plx from "react-plx";
-import {logoData, navData} from "../../data/parallax";
+import {brandData, navData} from "../../data/parallax";
 import {NavLink} from "react-router-dom";
 import Links from "./Links";
 import {Modal} from "react-bootstrap";
@@ -37,7 +37,7 @@ class NavMobile extends React.Component {
                         <div className="navbar-header">
 
                             <Plx
-                                parallaxData={ logoData }
+                                parallaxData={ brandData }
                                 id="logo"
                             >
 

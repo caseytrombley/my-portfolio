@@ -2,16 +2,16 @@
 @import "mixins";
 
 
-@import "comps/base";
-@import "comps/common";
-@import "comps/cube";
+@import "components/base";
+@import "components/common";
+@import "components/cube";
 
-@import "comps/footer";
-@import "comps/header";
-@import "comps/modal";
-@import "comps/nav";
+@import "components/footer";
+@import "components/header";
+@import "components/modal";
+@import "components/nav";
 //@import "comps/scrollbar";
-@import "comps/transition";
+@import "components/transition";
 
 @import url('https://fonts.googleapis.com/css?family=Londrina+Outline|Londrina+Solid');
 
@@ -23,60 +23,6 @@ main {
   border-bottom: $padding solid rgba(0,0,0,.1);
 }
 
-.st0{fill:#CCCCCC;}
-#piano-keys {
-  rect {
-    transform-origin: 50% 50%;
-    transform: translateY(-30px);
-
-    @for $i from 1 through length($rainbow) {
-      &:nth-child(#{$i})  {
-        fill: nth($rainbow, $i);
-      }
-    }
-
-    $list:
-      -30,
-      -30,
-      -30,
-      -30,
-      -30,
-      -30,
-      -30;
-
-    $grays:
-            #DCDCDC40
-            #D3D3D340
-            #C0C0C040
-            #A9A9A940
-            #80808040
-            #69696940
-            #55555540;
-
-    @for $i from 1 through 7 {
-      &:nth-child(#{$i})  {
-        //transform: rotate(nth($list-random, $i)*1deg);
-        transform: rotate(random(360) - 180 + deg);
-        animation: implode random(30)+s forwards;
-        //fill: nth($grays, $i);
-        fill: nth($rainbow, $i);
-      }
-    }
-    //animation: implode 4s forwards;
-
-
-    @keyframes implode {
-
-      to {
-        transform: rotate(0deg)
-      }
-    }
-
-
-  }
-
-
-}
 // Pages
 .fullscreen {
   min-height: calc(100vh - 50px);
@@ -113,6 +59,11 @@ main {
 }
 .portfolio {
   background: $rainbow-bright-blue;
+
+  .row {
+    background: rgba(0,0,0, .1);
+    padding: 30px;
+  }
 }
 .contact {
   background: $rainbow-bright-indigo;
