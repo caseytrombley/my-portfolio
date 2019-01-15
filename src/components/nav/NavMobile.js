@@ -3,7 +3,7 @@ import Plx from "react-plx";
 import {logoData, navData} from "../../data/parallax";
 import {NavLink} from "react-router-dom";
 import Links from "./Links";
-import {Button, Modal} from "react-bootstrap";
+import {Modal} from "react-bootstrap";
 
 class NavMobile extends React.Component {
     constructor(props, context) {
@@ -30,7 +30,7 @@ class NavMobile extends React.Component {
 
 
 
-            <div>
+            <React.Fragment>
 
                 <nav className="navbar navbar-inverse">
                     <div className="container">
@@ -74,16 +74,7 @@ class NavMobile extends React.Component {
 
                             </Plx>
 
-                            <button
-                                onClick={this.handleShow}
-                                type="button"
-                                className="navbar-toggle x navbar-toggle collapsed"
-                            >
-                                <span className="sr-only">Toggle navigation</span>
-                                <span className="icon-bar"></span>
-                                <span className="icon-bar"></span>
-                                <span className="icon-bar"></span>
-                            </button>
+
                         </div>
 
                         <Plx
@@ -102,14 +93,40 @@ class NavMobile extends React.Component {
                     </div>
                 </nav>
 
-                <Modal show={this.state.show} onHide={this.handleClose}>
+                <button
+                    onClick={this.handleShow}
+                    type="button"
+                    className="navbar-toggle x navbar-toggle collapsed"
+                >
+                    <span className="sr-only">Toggle navigation</span>
+                    <span className="icon-bar"></span>
+                    <span className="icon-bar"></span>
+                    <span className="icon-bar"></span>
+                </button>
 
+                <Modal show={this.state.show} onHide={this.handleClose}>
+                    <button
+                        onClick={this.handleClose}
+                        type="button"
+                        className="navbar-toggle x navbar-toggle"
+                    >
+                        <span className="sr-only">Toggle navigation</span>
+                        <span className="icon-bar"></span>
+                        <span className="icon-bar"></span>
+                        <span className="icon-bar"></span>
+                    </button>
                     <Modal.Body>
-                        <Links onClick={this.handleClose}/>
+
+                        <ul className="nav modal-nav">
+                            <Links onClick={this.handleClose}/>
+                        </ul>
+
+
                     </Modal.Body>
 
                 </Modal>
-            </div>
+
+            </React.Fragment>
 
         )
     }

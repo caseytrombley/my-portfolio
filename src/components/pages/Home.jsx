@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import Footer from "../Footer";
 
 class Home extends Component {
 
@@ -18,7 +19,7 @@ class Home extends Component {
 
                 </main>
 
-
+                <Footer/>
 
             </React.Fragment>
         );

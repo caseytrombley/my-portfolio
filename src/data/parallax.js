@@ -5,7 +5,7 @@ export const headerData = [
         properties: [
 
             {
-                startValue: 70,
+                startValue: 69,
                 endValue: 56,
                 property: 'height',
             },
