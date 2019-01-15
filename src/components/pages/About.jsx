@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import {Col, Grid, Row} from "react-bootstrap";
 import Footer from "../Footer";
 
+import PianoKeys from '../anims/piano';
 
 class About extends Component {
 
@@ -25,6 +26,24 @@ class About extends Component {
 
 
                     <Grid>
+                        <Row>
+                            <Col xs={8} md={6}>
+                                <PianoKeys/>
+
+                            </Col>
+                            <Col xs={8} md={6}>
+                                <h1>Hello and welcome to my portfolio.</h1>
+                                <p>
+                                    I created this site with React. I designed and built everything using Javascript, HTML5, CSS3 and SVG. Some of the nuts and bolts are from Bootstrap and Google, etc.
+                                </p>
+                                <p>
+                                    My main focus is front-end web development. I started working with CSS and HTML in 2004 and have been steadily focused on full stack web development, software development and design. My main areas of focus are CSS, HTML, and Javascript. I am a self-taught piano player and avid songwriter. I have written nearly 200 songs and have countless hours of studio and live playing experience.
+                                </p>
+                                <p>
+
+                                </p>
+                            </Col>
+                        </Row>
                         <Row>
                             <Col xs={12} md={12}>
 
