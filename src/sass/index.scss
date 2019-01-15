@@ -1,16 +1,17 @@
-@import "sass/vars";
-@import "sass/mixins";
+@import "vars";
+@import "mixins";
 
 
-@import "sass/comps/base";
-@import "sass/comps/common";
-@import "sass/comps/cube";
+@import "comps/base";
+@import "comps/common";
+@import "comps/cube";
 
-@import "sass/comps/footer";
-@import "sass/comps/header";
-@import "sass/comps/modal";
-@import "sass/comps/nav";
-@import "sass/comps/transition";
+@import "comps/footer";
+@import "comps/header";
+@import "comps/modal";
+@import "comps/nav";
+//@import "comps/scrollbar";
+@import "comps/transition";
 
 @import url('https://fonts.googleapis.com/css?family=Londrina+Outline|Londrina+Solid');
 
