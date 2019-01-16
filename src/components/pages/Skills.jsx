@@ -30,7 +30,7 @@ class Skills extends Component {
                         <Row>
                             <Col xs={12} md={12}>
                                 <p className="lead">
-                                    We all have skills. Here a few of mine.
+                                    We all have skills. Here's some of mine.
                                 </p>
 
                             </Col>
@@ -95,7 +95,7 @@ class Skills extends Component {
                                     </div>
                                     <div className="media-body">
                                         <h4 className="media-heading">Adobe Illustrator</h4>
-                                        My bread and butter. Can't say enough good things about this application. I use this to create vector art for print and web.
+                                        My bread and butter. Can't say enough good things about this application. I use this to create art and Scalable Vector Graphics (SVG) for print and digital.
                                     </div>
                                 </div>
 
@@ -141,7 +141,7 @@ class Skills extends Component {
                                     </div>
                                     <div className="media-body">
                                         <h4 className="media-heading">React</h4>
-                                        This framework is great for building a modern web application using javascript and JSX syntax. It is a joy to work in React for the ease of building and organizing separate components and the science of using data to represent objects.
+                                        This library is great for building composable user interfaces. It gives me the flexibility to build complex components and use raw data to represent them.
                                     </div>
                                 </div>
 

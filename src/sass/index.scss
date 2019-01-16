@@ -44,6 +44,9 @@ main {
     padding-bottom: $padding-big;
   }
 }
+.media-heading {
+  font-weight: 500;
+}
 
 // Pages
 .fullscreen {
@@ -87,7 +90,20 @@ main {
     background: rgba(0,0,0, .1);
     padding: 30px;
   }
+  .tile-viewport {
+    //width: 300px !important;
+    //height: 200px !important;
+    border-radius: 5px;
+  }
 }
 .contact {
   background: $rainbow-bright-indigo;
+}
+.generic {
+  background: white;
+  .row {
+    &:only-child {
+      min-height: 60vh;
+    }
+  }
 }

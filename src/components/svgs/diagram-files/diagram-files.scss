@@ -2,6 +2,10 @@
 @import "../../../sass/vars";
 
 #diagram-files {
+  margin-top: $padding;
+  @include breakpoint(sm) {
+    margin-top: 0;
+  }
 
   max-width: 350px;
   .st0{fill:#01ADEE;}
