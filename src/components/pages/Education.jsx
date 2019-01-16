@@ -2,21 +2,8 @@ import React, {Component} from 'react';
 import {Col, Grid, Row} from "react-bootstrap";
 import Footer from "../Footer";
 
+import {educationData} from "../../data/data";
 
-const Paragraph = () => (
-    <p>
-        {[
-            'Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum ',
-            'tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas ',
-            'semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ',
-            'ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean ',
-            'fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. ',
-            'Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor ',
-            'neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, ',
-            'accumsan porttitor, facilisis luctus, metus',
-        ].join('')}
-    </p>
-);
 
 class Education extends Component {
 
@@ -26,22 +13,34 @@ class Education extends Component {
             <React.Fragment>
 
                 <main className="education">
+
                     <Grid>
                         <Row>
                             <Col xs={12} md={12}>
-
-                                <h1>Work experience</h1>
-
-                                <Paragraph/>
-                                <Paragraph/>
-                                <Paragraph/>
-                                <Paragraph/>
-
-
+                                <h1>Education</h1>
                             </Col>
-
                         </Row>
+                        {educationData.map(p =>
+                            <Row key={p.school}>
+                                <Col xs={12} md={12}>
+
+                                    <h3 className="h3 highlight-dark">{p.school}</h3>
+                                    <span className="divide-from-next">
+                                        <strong>{p.degree}</strong>
+                                    </span>
+
+                                    <span>{p.major}</span>
+                                    <p>GPA: {p.gpa}</p>
+
+
+
+                                </Col>
+
+                            </Row>
+
+                        )}
                     </Grid>
+
                 </main>
 
                 <Footer/>

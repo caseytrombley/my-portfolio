@@ -40,12 +40,12 @@ $rainbow: (
         $rainbow-violet
 );
 
-$rainbow-bright-red:     #ee293f;
-$rainbow-bright-orange:  #ff9f00;
-$rainbow-bright-yellow:  #fffd00;
-$rainbow-bright-green:   #00ff0e;
+$rainbow-bright-red: #ee3f46;
+$rainbow-bright-orange: #ffb53e;
+$rainbow-bright-yellow: #fffd63;
+$rainbow-bright-green: #64ff69;
 $rainbow-bright-blue:    #00caff;
-$rainbow-bright-indigo:  #4c29ee;
+$rainbow-bright-indigo: #626bee;
 $rainbow-bright-violet:  #e729ee;
 
 $rainbow-bright: (
@@ -66,3 +66,16 @@ $grays:
         #80808040
         #69696940
         #55555540;
+
+
+$grid-breakpoints: (
+        xxxs: 0,
+        xxs: 320px,
+        xs: 568px,
+        sm: 667px,
+        md: 768px,
+        lg: 992px,
+        xl: 1200px,
+        xxl: 1440px,
+        xxxl: 1600px
+)

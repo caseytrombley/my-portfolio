@@ -2,7 +2,9 @@
 @import "../../../sass/vars";
 
 #piano-keys {
-  max-width: 450px;
+  @include breakpoint(md) {
+    max-width: 450px;
+  }
 
   rect {
     transform-origin: 50% 50%;

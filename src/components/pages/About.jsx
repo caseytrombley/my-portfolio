@@ -25,15 +25,15 @@ class About extends Component {
 
                             </Col>
                             <Col xs={12} md={6}>
-                                <h1>Nice to meet you.</h1>
+                                <h1>A little bit about me</h1>
 
                                 <h3>
-                                    My name is Casey and I am a professional designer.
+                                    My name is Casey. I am a professional designer.
                                 </h3>
 
 
                                 <p className="lead text-muted">
-                                    My main area of focus is full-stack web development, which means I can design and build websites from concept to completion.
+                                    Since 2004 I have worked for a variety of industries designing media for print and digital. Throughout this time I have gained expert-level skills in drawing, graphic design, web development and music.
                                 </p>
 
                                 {/*<p className="lead text-muted">*/}

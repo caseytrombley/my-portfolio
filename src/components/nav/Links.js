@@ -24,10 +24,10 @@ const Links = (props) => {
                     className="nav-link"
                     to="/experience"
                 >
-                    Work Experience
+                    Experience
                 </NavLink>
             </li>
-
+            {/*
             <li>
                 <NavLink
                     onClick={props.onClick}
@@ -39,6 +39,7 @@ const Links = (props) => {
                     Education
                 </NavLink>
             </li>
+            */}
 
             <li>
                 <NavLink
