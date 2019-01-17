@@ -2,8 +2,7 @@ import React, {Component} from 'react';
 import {Col, Grid, Row} from "react-bootstrap";
 import Footer from "../Footer";
 
-
-class Contact extends Component {
+class Music extends Component {
 
 
     render() {
@@ -15,7 +14,7 @@ class Contact extends Component {
                         <Row>
                             <Col xs={12} md={12}>
 
-                                <h1>Contact me</h1>
+                                <h1>Music</h1>
 
 
 
@@ -25,11 +24,7 @@ class Contact extends Component {
                         <Row>
                             <Col xs={12} md={12}>
 
-                                <form method="POST">
-                                    <input type="email" name="email" placeholder="Your email"/>
-                                    <textarea name="message" placeholder="Test Message"></textarea>
-                                    <button type="submit">Send Test</button>
-                                </form>
+
 
 
 
@@ -46,4 +41,4 @@ class Contact extends Component {
     }
 }
 
-export default Contact;
+export default Music;

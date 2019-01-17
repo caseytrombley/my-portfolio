@@ -30,7 +30,7 @@ class Skills extends Component {
                         <Row>
                             <Col xs={12} md={12}>
                                 <p className="lead">
-                                    We all have skills. Here's some of mine.
+                                    These are my strongest skills, at a glance.
                                 </p>
 
                             </Col>

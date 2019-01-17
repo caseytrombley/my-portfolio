@@ -71,33 +71,33 @@ main {
 }
 
 .about {
-  background: $rainbow-bright-red;
+  background: #a0a0a0;
 }
 .experience {
-  background: $rainbow-bright-orange;
+  background: #a0a0a0;
 
 }
 .education {
-  background: $rainbow-bright-yellow;
+  background: #a0a0a0;
 }
 .skills {
-  background: $rainbow-bright-green;
+  background: #a0a0a0;
 }
 .portfolio {
-  background: $rainbow-bright-blue;
+  background: #a0a0a0;
 
   .row {
     background: rgba(0,0,0, .1);
     padding: 30px;
   }
-  .tile-viewport {
+  .tile, .tile-viewport {
     //width: 300px !important;
     //height: 200px !important;
-    border-radius: 5px;
+    border-radius: 4px;
   }
 }
 .contact {
-  background: $rainbow-bright-indigo;
+  background: #a0a0a0;
 }
 .generic {
   background: white;

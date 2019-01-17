@@ -24,7 +24,7 @@ class Portfolio extends Component {
 
                             </Col>
                         </Row>
-
+                        {/*
                         <Row>
                             <Col xs={12} md={3}>
 
@@ -38,7 +38,7 @@ class Portfolio extends Component {
 
                             </Col>
                         </Row>
-
+                        */}
 
                     </Grid>
                 </main>

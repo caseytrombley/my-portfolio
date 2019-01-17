@@ -71,11 +71,27 @@ const Links = (props) => {
                     exact
                     activeClassName="active-nav"
                     className="nav-link"
+                    to="/music"
+                >
+                    Music
+                </NavLink>
+            </li>
+
+            {/*
+            <li>
+                <NavLink
+                    onClick={props.onClick}
+                    exact
+                    activeClassName="active-nav"
+                    className="nav-link"
                     to="/contact"
                 >
                     Contact
                 </NavLink>
             </li>
+            */}
+
+
         </React.Fragment>
     );
 };

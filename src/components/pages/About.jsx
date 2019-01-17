@@ -33,7 +33,7 @@ class About extends Component {
 
 
                                 <p className="lead text-muted">
-                                    Since 2004 I have worked for a variety of industries designing media for print and digital. Throughout this time I have gained expert-level skills in drawing, graphic design, web development and music.
+                                    Since 2004 I have worked in a variety of industries designing media for print and digital. Throughout this time I have acquired leading skills in drawing, graphic design, web development, and music.
                                 </p>
 
                                 {/*<p className="lead text-muted">*/}
@@ -46,11 +46,11 @@ class About extends Component {
 
                                 <h2 className="">Creative process and workflow.</h2>
                                 <p className="lead text-muted">
-                                    My main area of focus is full-stack web development, which means I can design and build websites from concept to completion.
+                                    My main area of focus is full-stack web development. I design and build websites from concept to completion.
                                 </p>
 
                                 <p>
-                                    I built this website using <strong>React</strong>, <strong>Javascript</strong>, <strong>HTML5</strong>, <strong>CSS3</strong> and <strong>Animated SVG</strong>. Some of the nuts and bolts are from Bootstrap and other various Javascript libraries.
+                                    I built this website with <strong>React</strong>, <strong>Javascript</strong>, <strong>HTML5</strong>, <strong>CSS3</strong> and <strong>Animated SVG</strong>. Some of the nuts and bolts are from Bootstrap and other various Javascript libraries.
                                 </p>
 
 
