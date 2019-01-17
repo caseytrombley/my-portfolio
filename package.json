@@ -1,6 +1,7 @@
 {
   "name": "my-portfolio",
   "version": "0.1.0",
+  "homepage": "http://caseytrombley.com",
   "private": true,
   "dependencies": {
     "lodash": "^4.17.11",
