@@ -59,7 +59,7 @@ class About extends Component {
                                 </p>
 
                                 <p>
-                                    The latest technology I like to work with is the <strong>MERN</strong> stack, although I am seasoned in older technologies as well such as the <strong>LAMP</strong> stack.
+                                    The latest technology I like to work with is the <strong>MERN</strong> stack, although I am seasoned in older technologies such as the <strong>LAMP</strong> stack.
                                 </p>
                                 <p>
                                     The tools I use are all cutting edge. Programs like <strong>git</strong> allow me to easily manage my source code, and <strong>Node</strong> along with <strong>Express</strong> allows me to do server magic within my applications.

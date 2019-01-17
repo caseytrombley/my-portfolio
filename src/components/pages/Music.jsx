@@ -26,7 +26,7 @@ class Music extends Component {
 
                             {soundcloudData.map(m =>
 
-                                <Col xs={6} md={4} className="song-column">
+                                <Col xs={12} md={4} className="song-column">
 
                                     <iframe
                                         width="100%"
