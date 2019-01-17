@@ -44,9 +44,7 @@ main {
     padding-bottom: $padding-big;
   }
 }
-.media-heading {
-  font-weight: 500;
-}
+
 .song-column {
   margin-bottom: $padding;
 }
@@ -71,6 +69,7 @@ main {
     }
   }
 }
+
 .bg-picture {
   position: relative;
   background: url("/images/casey-drawing.jpg") no-repeat center center;
@@ -81,6 +80,42 @@ main {
   animation: float 6s ease-in-out infinite;
   box-shadow: 0 2px 5px 0 rgba(0,0,0,0.2);
   transform: translateY(0);
+}
+.media {
+  overflow: visible;
+  .media-left {
+    padding-right: $padding;
+  }
+  .media-heading {
+    font-weight: 500;
+  }
+}
+#icon-files {
+  overflow: visible;
+  animation: pulse 6s ease-in-out infinite;
+  transform: translateY(-5px);
+}
+@keyframes pulse {
+  0% {
+    transform: scale(.9);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(.9);
+  }
+}
+@keyframes bob {
+  0% {
+    transform: translateY(0) scale(1);
+  }
+  50% {
+    transform: translateY(-3px) scale(1.1);
+  }
+  100% {
+    transform: translateY(0) scale(1);
+  }
 }
 @keyframes float {
   0% {

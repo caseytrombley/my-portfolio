@@ -2,7 +2,7 @@
 @import "../../../sass/vars";
 
 #diagram-files {
-  margin-top: $padding;
+  margin-top: $padding-big;
   @include breakpoint(sm) {
     margin-top: 0;
   }

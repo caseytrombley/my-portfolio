@@ -5,6 +5,8 @@ import Footer from "../Footer";
 import PianoKeys from '../svgs/piano';
 import DiagramFiles from '../svgs/diagram-files';
 import {NavLink} from "react-router-dom";
+import {pianoData, diagramFilesData, buttonData} from "../../data/parallax";
+import Plx from "react-plx";
 
 class About extends Component {
 
@@ -22,7 +24,11 @@ class About extends Component {
                     <Grid>
                         <Row>
                             <Col xs={12} md={6} className="text-center">
-                                <PianoKeys/>
+                                <Plx
+                                    parallaxData={ pianoData }
+                                >
+                                    <PianoKeys/>
+                                </Plx>
 
                             </Col>
                             <Col xs={12} md={6}>
@@ -66,23 +72,29 @@ class About extends Component {
                                 </p>
 
                                 <p>
-
-                                    <NavLink
-                                        exact
-                                        activeClassName="active-nav"
-                                        className="btn btn-primary btn-lg nav-link floater"
-                                        to="/skills"
+                                    <Plx
+                                        parallaxData={ buttonData }
                                     >
-                                        Learn more about my skills
-                                    </NavLink>
+                                        <NavLink
+                                            exact
+                                            activeClassName="active-nav"
+                                            className="btn btn-primary btn-lg nav-link floater"
+                                            to="/skills"
+                                        >
+                                            Learn more about my skills
+                                        </NavLink>
+                                    </Plx>
                                 </p>
 
 
                             </Col>
                             <Col xs={12} md={6} className="text-center">
 
-                                <DiagramFiles/>
-
+                                <Plx
+                                    parallaxData={ diagramFilesData }
+                                >
+                                    <DiagramFiles/>
+                                </Plx>
 
 
                             </Col>
