@@ -3,7 +3,7 @@ import {Col, Grid, Row} from "react-bootstrap";
 import Footer from "../Footer";
 
 import Gallery from 'react-grid-gallery';
-import {logosData, designData} from "../../data/portfolio";
+import {logosData} from "../../data/portfolio";
 
 
 class Portfolio extends Component {

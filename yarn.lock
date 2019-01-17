@@ -879,23 +879,6 @@
   resolved "https://registry.yarnpkg.com/@csstools/convert-colors/-/convert-colors-1.4.0.tgz#ad495dc41b12e75d588c6db8b9834f08fa131eb7"
   integrity sha512-5a6wqoJV/xEdbRNKVo6I4hO3VjyDq//8q2f9I6PBAvMesJHFauXDorcNCsr9RzvsZnaWi5NYCcfyqP1QeFHFbw==
 
-"@emotion/is-prop-valid@^0.6.8":
-  version "0.6.8"
-  resolved "https://repo.forge.lmig.com/api/npm/npm/@emotion/is-prop-valid/-/is-prop-valid-0.6.8.tgz#68ad02831da41213a2089d2cab4e8ac8b30cbd85"
-  integrity sha1-aK0Cgx2kEhOiCJ0sq06KyLMMvYU=
-  dependencies:
-    "@emotion/memoize" "^0.6.6"
-
-"@emotion/memoize@^0.6.6":
-  version "0.6.6"
-  resolved "https://repo.forge.lmig.com/api/npm/npm/@emotion/memoize/-/memoize-0.6.6.tgz#004b98298d04c7ca3b4f50ca2035d4f60d2eed1b"
-  integrity sha1-AEuYKY0Ex8o7T1DKIDXU9g0u7Rs=
-
-"@emotion/unitless@^0.7.0":
-  version "0.7.3"
-  resolved "https://repo.forge.lmig.com/api/npm/npm/@emotion/unitless/-/unitless-0.7.3.tgz#6310a047f12d21a1036fb031317219892440416f"
-  integrity sha1-YxCgR/EtIaEDb7AxMXIZiSRAQW8=
-
 "@mrmlnc/readdir-enhanced@^2.2.1":
   version "2.2.1"
   resolved "https://repo.forge.lmig.com/api/npm/npm/@mrmlnc/readdir-enhanced/-/readdir-enhanced-2.2.1.tgz#524af240d1a360527b730475ecfa1344aa540dde"
@@ -908,14 +891,6 @@
   version "1.1.3"
   resolved "https://repo.forge.lmig.com/api/npm/npm/@nodelib/fs.stat/-/fs.stat-1.1.3.tgz#2b5a3ab3f918cca48a8c754c08168e3f03eba61b"
   integrity sha1-K1o6s/kYzKSKjHVMCBaOPwPrphs=
-
-"@semantic-ui-react/event-stack@^3.0.1":
-  version "3.0.1"
-  resolved "https://repo.forge.lmig.com/api/npm/npm/@semantic-ui-react/event-stack/-/event-stack-3.0.1.tgz#41d0b095ac94cc5e1607a4fed4d0f8860d0d2e60"
-  integrity sha1-QdCwlayUzF4WB6T+1ND4hg0NLmA=
-  dependencies:
-    exenv "^1.2.2"
-    prop-types "^15.6.2"
 
 "@svgr/core@^2.4.1":
   version "2.4.1"
@@ -1650,20 +1625,6 @@ babel-plugin-named-asset-import@^0.2.3:
   resolved "https://repo.forge.lmig.com/api/npm/npm/babel-plugin-named-asset-import/-/babel-plugin-named-asset-import-0.2.3.tgz#b40ed50a848e7bb0a2a7e34d990d1f9d46fe9b38"
   integrity sha1-tA7VCoSOe7Cip+NNmQ0fnUb+mzg=
 
-"babel-plugin-styled-components@>= 1":
-  version "1.9.3"
-  resolved "https://repo.forge.lmig.com/api/npm/npm/babel-plugin-styled-components/-/babel-plugin-styled-components-1.9.3.tgz#facc61da441d15b291128b36cba07f309ed324f0"
-  integrity sha1-+sxh2kQdFbKREos2y6B/MJ7TJPA=
-  dependencies:
-    "@babel/helper-annotate-as-pure" "^7.0.0"
-    babel-plugin-syntax-jsx "^6.18.0"
-    lodash "^4.17.10"
-
-babel-plugin-syntax-jsx@^6.18.0:
-  version "6.18.0"
-  resolved "https://repo.forge.lmig.com/api/npm/npm/babel-plugin-syntax-jsx/-/babel-plugin-syntax-jsx-6.18.0.tgz#0af32a9a6e13ca7a3fd5069e62d7b0f58d0d8946"
-  integrity sha1-CvMqmm4Tyno/1QaeYtew9Y0NiUY=
-
 babel-plugin-syntax-object-rest-spread@^6.13.0, babel-plugin-syntax-object-rest-spread@^6.8.0:
   version "6.13.0"
   resolved "https://registry.yarnpkg.com/babel-plugin-syntax-object-rest-spread/-/babel-plugin-syntax-object-rest-spread-6.13.0.tgz#fd6536f2bce13836ffa3a5458c4903a597bb3bf5"
@@ -2304,7 +2265,7 @@ class-utils@^0.3.5:
     isobject "^3.0.0"
     static-extend "^0.1.1"
 
-classnames@^2.2.5, classnames@^2.2.6:
+classnames@^2.2.5:
   version "2.2.6"
   resolved "https://repo.forge.lmig.com/api/npm/npm/classnames/-/classnames-2.2.6.tgz#43935bffdd291f326dad0a205309b38d00f650ce"
   integrity sha1-Q5Nb/90pHzJtrQogUwmzjQD2UM4=
@@ -2708,11 +2669,6 @@ crypto-browserify@^3.11.0:
     randombytes "^2.0.0"
     randomfill "^1.0.3"
 
-css-color-keywords@^1.0.0:
-  version "1.0.0"
-  resolved "https://repo.forge.lmig.com/api/npm/npm/css-color-keywords/-/css-color-keywords-1.0.0.tgz#fea2616dc676b2962686b3af8dbdbe180b244e05"
-  integrity sha1-/qJhbcZ2spYmhrOvjb2+GAskTgU=
-
 css-color-names@0.0.4, css-color-names@^0.0.4:
   version "0.0.4"
   resolved "https://registry.yarnpkg.com/css-color-names/-/css-color-names-0.0.4.tgz#808adc2e79cf84738069b646cb20ec27beb629e0"
@@ -2777,15 +2733,6 @@ css-selector-tokenizer@^0.7.0:
     cssesc "^0.1.0"
     fastparse "^1.1.1"
     regexpu-core "^1.0.0"
-
-css-to-react-native@^2.2.2:
-  version "2.2.2"
-  resolved "https://repo.forge.lmig.com/api/npm/npm/css-to-react-native/-/css-to-react-native-2.2.2.tgz#c077d0f7bf3e6c915a539e7325821c9dd01f9965"
-  integrity sha1-wHfQ978+bJFaU55zJYIcndAfmWU=
-  dependencies:
-    css-color-keywords "^1.0.0"
-    fbjs "^0.8.5"
-    postcss-value-parser "^3.3.0"
 
 css-tree@1.0.0-alpha.28:
   version "1.0.0-alpha.28"
@@ -3911,7 +3858,7 @@ fb-watchman@^2.0.0:
   dependencies:
     bser "^2.0.0"
 
-fbjs@^0.8.0, fbjs@^0.8.5:
+fbjs@^0.8.0:
   version "0.8.17"
   resolved "https://repo.forge.lmig.com/api/npm/npm/fbjs/-/fbjs-0.8.17.tgz#c4d598ead6949112653d6588b01a5cdcd9f90fdd"
   integrity sha1-xNWY6taUkRJlPWWIsBpc3Nn5D90=
@@ -5954,11 +5901,6 @@ jsx-ast-utils@^2.0.1:
   dependencies:
     array-includes "^3.0.3"
 
-keyboard-key@^1.0.2:
-  version "1.0.2"
-  resolved "https://repo.forge.lmig.com/api/npm/npm/keyboard-key/-/keyboard-key-1.0.2.tgz#212e14dde4c2059814336159bbc5acd0a348ca6b"
-  integrity sha1-IS4U3eTCBZgUM2FZu8Ws0KNIyms=
-
 keycode@^2.2.0:
   version "2.2.0"
   resolved "https://repo.forge.lmig.com/api/npm/npm/keycode/-/keycode-2.2.0.tgz#3d0af56dc7b8b8e5cba8d0a97f107204eec22b04"
@@ -6304,11 +6246,6 @@ mem@^4.0.0:
     map-age-cleaner "^0.1.1"
     mimic-fn "^1.0.0"
     p-is-promise "^1.1.0"
-
-memoize-one@^4.0.0:
-  version "4.0.3"
-  resolved "https://repo.forge.lmig.com/api/npm/npm/memoize-one/-/memoize-one-4.0.3.tgz#cdfdd942853f1a1b4c71c5336b8c49da0bf0273c"
-  integrity sha1-zf3ZQoU/GhtMccUza4xJ2gvwJzw=
 
 memory-fs@^0.4.0, memory-fs@~0.4.1:
   version "0.4.1"
@@ -8100,7 +8037,7 @@ prop-types-extra@^1.0.1:
     react-is "^16.3.2"
     warning "^3.0.0"
 
-prop-types@^15.5.10, prop-types@^15.5.4, prop-types@^15.5.8, prop-types@^15.6.0, prop-types@^15.6.1, prop-types@^15.6.2, "prop-types@^15.6.2  ":
+prop-types@^15.5.10, prop-types@^15.5.8, prop-types@^15.6.0, prop-types@^15.6.1, prop-types@^15.6.2, "prop-types@^15.6.2  ":
   version "15.6.2"
   resolved "https://registry.yarnpkg.com/prop-types/-/prop-types-15.6.2.tgz#05d5ca77b4453e985d60fc7ff8c859094a497102"
   integrity sha512-3pboPvLiWD7dkI3qf3KbUe6hKFKa52w+AE0VCqECtf+QHAKgOL37tTaNCnuX1nAAQ4ZhyP+kYVKf8rLmJ/feDQ==
@@ -8365,7 +8302,7 @@ react-images@^0.5.16:
     react-scrolllock "^2.0.1"
     react-transition-group "2"
 
-react-is@^16.3.2, react-is@^16.6.0:
+react-is@^16.3.2:
   version "16.6.3"
   resolved "https://repo.forge.lmig.com/api/npm/npm/react-is/-/react-is-16.6.3.tgz#d2d7462fcfcbe6ec0da56ad69047e47e56e7eac0"
   integrity sha1-0tdGL8/L5uwNpWrWkEfkflbn6sA=
@@ -8496,7 +8433,7 @@ react-scrolllock@^2.0.1:
     exenv "^1.2.2"
     react-prop-toggle "^1.0.2"
 
-react-transition-group@2:
+react-transition-group@2, react-transition-group@^2.5.3:
   version "2.5.3"
   resolved "https://registry.yarnpkg.com/react-transition-group/-/react-transition-group-2.5.3.tgz#26de363cab19e5c88ae5dbae105c706cf953bb92"
   integrity sha512-2DGFck6h99kLNr8pOFk+z4Soq3iISydwOFeeEVPjTN6+Y01CmvbWmnN02VuTWyFdnRtIDPe+wy2q6Ui8snBPZg==
@@ -8515,24 +8452,6 @@ react-transition-group@^2.0.0, react-transition-group@^2.2.0:
     loose-envify "^1.4.0"
     prop-types "^15.6.2"
     react-lifecycles-compat "^3.0.4"
-
-react-with-breakpoints@^3.1.1:
-  version "3.1.1"
-  resolved "https://registry.yarnpkg.com/react-with-breakpoints/-/react-with-breakpoints-3.1.1.tgz#71c4964f034a4102556db3b47f35d5fbc10a09cc"
-  integrity sha512-JKi8hBMAE0wGuwgM2+NH59LT3y4Dw6KMsd7O1aGOXYlV1TeRec6QeTZeGlbmSV/BI/58HpjSstvL+G6Xec74IQ==
-  dependencies:
-    prop-types "^15.6.1"
-    react "^16.3.2"
-
-react@^16.3.2:
-  version "16.7.0"
-  resolved "https://registry.yarnpkg.com/react/-/react-16.7.0.tgz#b674ec396b0a5715873b350446f7ea0802ab6381"
-  integrity sha512-StCz3QY8lxTb5cl2HJxjwLFOXPIFQp+p+hxQfc8WE0QiLfCtIlKj8/+5tjjKm8uSTlAW+fCPaavGFS06V9Ar3A==
-  dependencies:
-    loose-envify "^1.1.0"
-    object-assign "^4.1.1"
-    prop-types "^15.6.2"
-    scheduler "^0.12.0"
 
 react@^16.6.3:
   version "16.6.3"
@@ -9038,14 +8957,6 @@ scheduler@^0.11.2:
     loose-envify "^1.1.0"
     object-assign "^4.1.1"
 
-scheduler@^0.12.0:
-  version "0.12.0"
-  resolved "https://registry.yarnpkg.com/scheduler/-/scheduler-0.12.0.tgz#8ab17699939c0aedc5a196a657743c496538647b"
-  integrity sha512-t7MBR28Akcp4Jm+QoR63XgAi9YgCUmgvDHqf5otgAj4QvdoBE4ImCX0ffehefePPG+aitiYHp0g/mW6s4Tp+dw==
-  dependencies:
-    loose-envify "^1.1.0"
-    object-assign "^4.1.1"
-
 schema-utils@^0.4.4, schema-utils@^0.4.5:
   version "0.4.7"
   resolved "https://registry.yarnpkg.com/schema-utils/-/schema-utils-0.4.7.tgz#ba74f597d2be2ea880131746ee17d0a093c68187"
@@ -9082,19 +8993,6 @@ selfsigned@^1.9.1:
   integrity sha512-9AukTiDmHXGXWtWjembZ5NDmVvP2695EtpgbCsxCa68w3c88B+alqbmZ4O3hZ4VWGXeGWzEVdvqgAJD8DQPCDw==
   dependencies:
     node-forge "0.7.5"
-
-semantic-ui-react@^0.84.0:
-  version "0.84.0"
-  resolved "https://repo.forge.lmig.com/api/npm/npm/semantic-ui-react/-/semantic-ui-react-0.84.0.tgz#43f908fd547b1e8b2b108675a93cd7d7460bcdbe"
-  integrity sha1-Q/kI/VR7HosrEIZ1qTzX10YLzb4=
-  dependencies:
-    "@babel/runtime" "^7.1.2"
-    "@semantic-ui-react/event-stack" "^3.0.1"
-    classnames "^2.2.6"
-    keyboard-key "^1.0.2"
-    lodash "^4.17.11"
-    prop-types "^15.6.2"
-    shallowequal "^1.1.0"
 
 "semver@2 || 3 || 4 || 5", semver@^5.3.0, semver@^5.4.1, semver@^5.5.0, semver@^5.5.1:
   version "5.6.0"
@@ -9214,11 +9112,6 @@ shallow-clone@^1.0.0:
     is-extendable "^0.1.1"
     kind-of "^5.0.0"
     mixin-object "^2.0.1"
-
-shallowequal@^1.1.0:
-  version "1.1.0"
-  resolved "https://repo.forge.lmig.com/api/npm/npm/shallowequal/-/shallowequal-1.1.0.tgz#188d521de95b9087404fd4dcb68b13df0ae4e7f8"
-  integrity sha1-GI1SHelbkIdAT9TctosT3wrk5/g=
 
 shebang-command@^1.2.0:
   version "1.2.0"
@@ -9663,22 +9556,6 @@ style-loader@0.23.0:
     loader-utils "^1.1.0"
     schema-utils "^0.4.5"
 
-styled-components@^4.1.2:
-  version "4.1.2"
-  resolved "https://repo.forge.lmig.com/api/npm/npm/styled-components/-/styled-components-4.1.2.tgz#f8a685e3b2bcd03c5beac7f2c02bb6ad237da9b3"
-  integrity sha1-+KaF47K80Dxb6sfywCu2rSN9qbM=
-  dependencies:
-    "@emotion/is-prop-valid" "^0.6.8"
-    "@emotion/unitless" "^0.7.0"
-    babel-plugin-styled-components ">= 1"
-    css-to-react-native "^2.2.2"
-    memoize-one "^4.0.0"
-    prop-types "^15.5.4"
-    react-is "^16.6.0"
-    stylis "^3.5.0"
-    stylis-rule-sheet "^0.0.10"
-    supports-color "^5.5.0"
-
 stylehacks@^4.0.0:
   version "4.0.1"
   resolved "https://registry.yarnpkg.com/stylehacks/-/stylehacks-4.0.1.tgz#3186595d047ab0df813d213e51c8b94e0b9010f2"
@@ -9687,16 +9564,6 @@ stylehacks@^4.0.0:
     browserslist "^4.0.0"
     postcss "^7.0.0"
     postcss-selector-parser "^3.0.0"
-
-stylis-rule-sheet@^0.0.10:
-  version "0.0.10"
-  resolved "https://repo.forge.lmig.com/api/npm/npm/stylis-rule-sheet/-/stylis-rule-sheet-0.0.10.tgz#44e64a2b076643f4b52e5ff71efc04d8c3c4a430"
-  integrity sha1-ROZKKwdmQ/S1Ll/3HvwE2MPEpDA=
-
-stylis@^3.5.0:
-  version "3.5.4"
-  resolved "https://repo.forge.lmig.com/api/npm/npm/stylis/-/stylis-3.5.4.tgz#f665f25f5e299cf3d64654ab949a57c768b73fbe"
-  integrity sha1-9mXyX14pnPPWRlSrlJpXx2i3P74=
 
 supports-color@^2.0.0:
   version "2.0.0"

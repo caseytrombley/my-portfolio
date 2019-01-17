@@ -31,8 +31,8 @@ class Experience extends Component {
                                 <p>{p.description}</p>
                                 <h5>Key job functions:</h5>
                                 <ul>
-                                    {p.job_functions.map(i =>
-                                        <li>{i}</li>
+                                    {p.job_functions.map((j, index) =>
+                                        <li key={index}>{j}</li>
                                     )}
                                 </ul>
 

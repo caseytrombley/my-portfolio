@@ -32,7 +32,7 @@ class About extends Component {
 
                             </Col>
                             <Col xs={12} md={6}>
-                                <h1>I am a creative type.</h1>
+                                <h1>I am the creative type</h1>
 
                                 <p className="lead text-muted">
                                     Since 2004 I have worked in a variety of industries sharpening my skills in drawing, graphic design, web development, and music.
@@ -71,20 +71,20 @@ class About extends Component {
                                     The tools I use are all cutting edge. Programs like <strong>git</strong> allow me to easily manage my source code, and <strong>Node</strong> along with <strong>Express</strong> allows me to do server magic within my applications.
                                 </p>
 
-                                <p>
-                                    <Plx
-                                        parallaxData={ buttonData }
+
+                                <Plx
+                                    parallaxData={ buttonData }
+                                >
+                                    <NavLink
+                                        exact
+                                        activeClassName="active-nav"
+                                        className="btn btn-primary btn-lg nav-link floater"
+                                        to="/skills"
                                     >
-                                        <NavLink
-                                            exact
-                                            activeClassName="active-nav"
-                                            className="btn btn-primary btn-lg nav-link floater"
-                                            to="/skills"
-                                        >
-                                            Learn more about my skills
-                                        </NavLink>
-                                    </Plx>
-                                </p>
+                                        Learn more about my skills
+                                    </NavLink>
+                                </Plx>
+
 
 
                             </Col>

@@ -17,14 +17,16 @@ const breakpoints = {
 };
 
 const App = () => (
-    <ReactBreakpoints breakpoints={breakpoints}>
+
         <Router>
-            <React.Fragment>
-                <Header />
-                <Container />
-            </React.Fragment>
+            <ReactBreakpoints breakpoints={breakpoints}>
+                <React.Fragment>
+                    <Header />
+                    <Container />
+                </React.Fragment>
+            </ReactBreakpoints>
         </Router>
-    </ReactBreakpoints>
+
 );
 
 export default App;

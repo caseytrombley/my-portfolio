@@ -14,11 +14,15 @@ import Music from './pages/Music';
 import NotFound from './pages/NotFound';
 
 function Container({ location }) {
+
+    window.scroll(0,0);
+
     return (
+
 
         <TransitionGroup className="transition-group">
             <CSSTransition
-                key={location.key}
+                key={location.pathname}
                 timeout={{ enter: 300, exit: 300 }}
                 classNames="fade"
             >
@@ -47,42 +51,5 @@ function Container({ location }) {
 
     );
 }
-
-// const Wrapper = styled.div`
-//   .fade-enter {
-//     left: -100%;
-//   }
-//
-//   .fade-enter.fade-enter-active {
-//     left: 0;
-//     transition: 300ms ease-in;
-//   }
-//
-//   .fade-exit {
-//     left: 0;
-//   }
-//
-//   .fade-exit.fade-exit-active {
-//     left: -100%;
-//     transition: 300ms ease-in;
-//   }
-//
-//   div.transition-group {
-//     position: relative;
-//   }
-//
-//   section.route-section {
-//     position: absolute;
-//     width: 100%;
-//     top: 0;
-//     left: 0;
-//     bottom: 0;
-//   }
-//
-//   @keyframes slide {
-//     100% { left: 0; }
-//   }
-//
-// `;
 
 export default withRouter(Container);

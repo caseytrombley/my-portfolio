@@ -3,7 +3,6 @@ import {Col, Grid, Row} from "react-bootstrap";
 import Footer from "../Footer";
 
 import {soundcloudData} from "../../data/soundcloud";
-import {workExperienceData} from "../../data/data";
 
 class Music extends Component {
 
