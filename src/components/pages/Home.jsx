@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import Footer from "../Footer";
+import {NavLink} from "react-router-dom";
 
 class Home extends Component {
 
@@ -11,9 +12,23 @@ class Home extends Component {
                 <main className="fullscreen">
 
 
-                    <div className="title">Welcome to Page Transition App!</div>
+
+
+                    <h1 className="cover-heading">Welcome to my portfolio</h1>
+
+                    <p className="lead">This is my work</p>
+
                     <section>
-                        <p>Click the links on header to change routes!</p>
+
+                        <NavLink
+                            exact
+                            activeClassName="active-nav"
+                            className="btn btn-lg btn-primary nav-link"
+                            to="/about"
+                        >
+                            Learn more about me
+                        </NavLink>
+
                     </section>
 
 

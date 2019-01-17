@@ -4,6 +4,7 @@ import Footer from "../Footer";
 
 import PianoKeys from '../svgs/piano';
 import DiagramFiles from '../svgs/diagram-files';
+import {NavLink} from "react-router-dom";
 
 class About extends Component {
 
@@ -25,15 +26,15 @@ class About extends Component {
 
                             </Col>
                             <Col xs={12} md={6}>
-                                <h1>A little bit about me</h1>
+                                <h1>My name is Casey.</h1>
 
                                 <h3>
-                                    My name is Casey. I am a professional designer.
+                                    I am a creative type.
                                 </h3>
 
 
                                 <p className="lead text-muted">
-                                    Since 2004 I have worked in a variety of industries designing media for print and digital. Throughout this time I have acquired leading skills in drawing, graphic design, web development, and music.
+                                    Since 2004 I have worked in a variety of industries sharpening my skills in drawing, graphic design, web development, and music.
                                 </p>
 
                                 {/*<p className="lead text-muted">*/}
@@ -44,15 +45,37 @@ class About extends Component {
                         <Row>
                             <Col xs={12} md={6}>
 
-                                <h2 className="">Creative process and workflow.</h2>
+                                <h2 className="">My focus.</h2>
                                 <p className="lead text-muted">
                                     My main area of focus is full-stack web development. I design and build websites from concept to completion.
+                                </p>
+
+                                <p>
+                                    Since 2004 I have worked professionally in the field and have produced hundreds of designs and dozens of applications and websites.
                                 </p>
 
                                 <p>
                                     I built this website with <strong>React</strong>, <strong>Javascript</strong>, <strong>HTML5</strong>, <strong>CSS3</strong> and <strong>Animated SVG</strong>. Some of the nuts and bolts are from Bootstrap and other various Javascript libraries.
                                 </p>
 
+                                <p>
+                                    The latest technology I like to work with is the <strong>MERN</strong> stack, although I am seasoned in older technologies as well such as the <strong>LAMP</strong> stack.
+                                </p>
+                                <p>
+                                    The tools I use are all cutting edge. Programs like <strong>git</strong> allow me to easily manage my source code, and <strong>Node</strong> along with <strong>Express</strong> allows me to do server magic within my applications.
+                                </p>
+
+                                <p>
+
+                                    <NavLink
+                                        exact
+                                        activeClassName="active-nav"
+                                        className="btn btn-primary btn-lg nav-link"
+                                        to="/skills"
+                                    >
+                                        Learn more about my skills
+                                    </NavLink>
+                                </p>
 
 
                             </Col>

@@ -2,6 +2,9 @@ import React, {Component} from 'react';
 import {Col, Grid, Row} from "react-bootstrap";
 import Footer from "../Footer";
 
+import {soundcloudData} from "../../data/soundcloud";
+import {workExperienceData} from "../../data/data";
+
 class Music extends Component {
 
 
@@ -9,26 +12,36 @@ class Music extends Component {
         return (
             <React.Fragment>
 
-                <main className="contact">
+                <main className="music">
                     <Grid>
                         <Row>
                             <Col xs={12} md={12}>
 
                                 <h1>Music</h1>
 
-
-
                             </Col>
 
                         </Row>
                         <Row>
-                            <Col xs={12} md={12}>
+
+                            {soundcloudData.map(m =>
+
+                                <Col xs={6} md={4} className="song-column">
+
+                                    <iframe
+                                        width="100%"
+                                        height="300"
+                                        scrolling="no"
+                                        frameBorder="no"
+                                        allow="autoplay"
+                                        title={m.title}
+                                        src={m.src}
+                                    />
 
 
+                                </Col>
 
-
-
-                            </Col>
+                            )}
 
                         </Row>
                     </Grid>

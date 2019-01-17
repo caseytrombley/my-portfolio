@@ -47,7 +47,9 @@ main {
 .media-heading {
   font-weight: 500;
 }
-
+.song-column {
+  margin-bottom: $padding;
+}
 // Pages
 .fullscreen {
   min-height: calc(100vh - 50px);
@@ -70,35 +72,27 @@ main {
   }
 }
 
+main {
+  background: $background-lighter;
+}
 .about {
-  background: #a0a0a0;
-}
-.experience {
-  background: #a0a0a0;
+  background: $background;
+  .btn {
+    margin-top: $padding;
+  }
 
 }
-.education {
-  background: #a0a0a0;
-}
-.skills {
-  background: #a0a0a0;
-}
+
 .portfolio {
-  background: #a0a0a0;
-
   .row {
     background: rgba(0,0,0, .1);
     padding: 30px;
   }
   .tile, .tile-viewport {
-    //width: 300px !important;
-    //height: 200px !important;
     border-radius: 4px;
   }
 }
-.contact {
-  background: #a0a0a0;
-}
+
 .generic {
   background: white;
   .row {

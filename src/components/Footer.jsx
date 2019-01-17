@@ -10,13 +10,14 @@ class Footer extends Component {
                 <Grid>
                     <Row>
                         <Col xs={12} md={8}>
-                            <h5 className="text-uppercase">Footer Content</h5>
-                            <p>Here you can use rows and columns here to organize your footer content.</p>
+                            <h3 className="text-uppercase">Contact Information</h3>
+                            <p>Please email me directly: <a href="mailto:portfolio.inquiries@gmail.com?subject=Mail from Casey's Portfolio">portfolio.inquiries@gmail.com</a>  </p>
                         </Col>
+                        {/*
                         <Col xs={6} md={4}>
                             <div className="col-md-3 mb-md-0 mb-3">
 
-                                <h5 className="text-uppercase">Links</h5>
+                                <h4 className="text-uppercase">Links</h4>
 
                                 <ul className="list-unstyled">
                                     <li>
@@ -56,6 +57,7 @@ class Footer extends Component {
 
                             </div>
                         </Col>
+                        */}
                     </Row>
                 </Grid>
 
