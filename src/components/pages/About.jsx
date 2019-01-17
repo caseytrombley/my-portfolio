@@ -26,16 +26,16 @@ class About extends Component {
 
                             </Col>
                             <Col xs={12} md={6}>
-                                <h1>My name is Casey.</h1>
-
-                                <h3>
-                                    I am a creative type.
-                                </h3>
-
+                                <h1>I am a creative type.</h1>
 
                                 <p className="lead text-muted">
                                     Since 2004 I have worked in a variety of industries sharpening my skills in drawing, graphic design, web development, and music.
                                 </p>
+
+
+                                <h3>
+                                    Solving problems with good design is what motivates me.
+                                </h3>
 
                                 {/*<p className="lead text-muted">*/}
                                     {/*Art and music are two things I am most passionate about. My favorite instrument is the piano. I have always been inspired by keyboards and love to play whether it's in the studio, live onstage, or on the vintage upright in my living room.*/}
@@ -70,7 +70,7 @@ class About extends Component {
                                     <NavLink
                                         exact
                                         activeClassName="active-nav"
-                                        className="btn btn-primary btn-lg nav-link"
+                                        className="btn btn-primary btn-lg nav-link floater"
                                         to="/skills"
                                     >
                                         Learn more about my skills
