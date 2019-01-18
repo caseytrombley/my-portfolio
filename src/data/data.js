@@ -13,12 +13,12 @@ export const workExperienceData = [
         name: 'Liberty Mutual',
         title: 'Web Developer',
         tenure: '2015 to present',
-        description: 'My work in a Direct Sales team has helped to develop next-generation insurance quoting applications. Using a modern blend of web development technologies, I build components and user interfaces for large scale applications. My work has helped improve processes for all things involved with creating web applications (html, css/sass, javascript, git, npm, node, react, mongo, + more). I have a proven track record of quality control and advanced problem solving skills.',
+        description: 'My work on a direct sales Agile team has helped to develop next generation insurance quoting applications. Using a modern blend of web development technologies, I add new designs and ui to large scale applications. My work involves writing html, css/sass, javascript, react/jsx and all things along the modern MERN stack. I have a proven record of quality control and good problem solving and debugging skills.',
         job_functions: [
-            'Administrator of the company\'s main component and pattern assets library.',
+            'Build components and assets for scaled applications.',
             'Design and develop new pages and components for use in responsive web applications.',
             'Manage the delivery pipeline and administer software releases.',
-            'Refine documentation in the repository and style guides.'
+            'Testing, debugging and support.'
         ]
 
     },
@@ -28,8 +28,8 @@ export const workExperienceData = [
         tenure: '2011 to 2015',
         description: 'As a Web UI Engineer I worked in a fast-paced corporate environment writing and supporting the front-end of several major web applications serving published content to libraries, academic universities, corporations, and institutions around the globe.',
         job_functions: [
-            'Worked within a large team of developers to build and maintain web applications.',
-            'Built and maintained assets and asset libraries.',
+            'Worked on Agile team to build and maintain web applications.',
+            'Built assets and libraries.',
             'Refined tools and workflow processes.',
             'Organized teams and projects.',
             'Fixed bugs and updated legacy software.'

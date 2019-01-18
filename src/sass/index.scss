@@ -48,6 +48,12 @@ main {
 .song-column {
   margin-bottom: $padding;
 }
+
+.vertical-text {
+  transform: rotate(-90deg);
+  transform-origin: 50% 50%;
+}
+
 // Pages
 .fullscreen {
   min-height: calc(100vh - 50px);
