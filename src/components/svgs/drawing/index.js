@@ -1,5 +1,6 @@
 import React from 'react';
 import './drawing.scss';
+import Pencil from '../pencil';
 
 import Plx from "react-plx";
 import {
@@ -28,10 +29,7 @@ const Drawing = () => {
                 parallaxData={ pencilData }
                 className="float-left"
             >
-                <div className="pencil">
-
-
-                </div>
+                <Pencil/>
 
             </Plx>
 
