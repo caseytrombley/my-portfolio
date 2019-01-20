@@ -4,6 +4,8 @@ import Footer from "../Footer";
 
 import PianoKeys from '../svgs/piano';
 import DiagramFiles from '../svgs/diagram-files';
+import Drawing from '../svgs/drawing';
+
 import {NavLink} from "react-router-dom";
 import {pianoData, diagramFilesData, buttonData} from "../../data/parallax";
 import Plx from "react-plx";
@@ -72,18 +74,16 @@ class About extends Component {
                                 </p>
 
 
-                                <Plx
-                                    parallaxData={ buttonData }
+
+                                <NavLink
+                                    exact
+                                    activeClassName="active-nav"
+                                    className="btn btn-primary btn-lg nav-link floater"
+                                    to="/skills"
                                 >
-                                    <NavLink
-                                        exact
-                                        activeClassName="active-nav"
-                                        className="btn btn-primary btn-lg nav-link floater"
-                                        to="/skills"
-                                    >
-                                        Learn more about my skills
-                                    </NavLink>
-                                </Plx>
+                                    Learn more about my skills
+                                </NavLink>
+
 
 
 
@@ -100,6 +100,18 @@ class About extends Component {
                             </Col>
 
 
+                        </Row>
+
+                        <Row className="section-drawing">
+                            <Col xs={12} md={6}>
+
+                                <Drawing/>
+
+                            </Col>
+                            <Col xs={12} md={6}>
+
+                                Text
+                            </Col>
                         </Row>
                     </Grid>
                 </main>

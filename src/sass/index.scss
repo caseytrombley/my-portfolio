@@ -23,6 +23,9 @@ main {
   border-bottom: $padding solid rgba(0,0,0,.1);
 }
 
+.float-left {
+  float: left;
+}
 // Docs
 .highlight-dark {
   background: rgba(0,0,0, .05);

@@ -1,7 +1,7 @@
 export const headerData = [
     {
         start: 0,
-        end: 50,
+        end: 100,
         properties: [
 
             {
@@ -16,7 +16,7 @@ export const headerData = [
 export const brandData = [
     {
         start: 0,
-        end: 50,
+        end: 100,
         properties: [
             {
                 startValue: 1,
@@ -49,12 +49,12 @@ export const pianoData = [
         properties: [
             {
                 startValue: 1,
-                endValue: 1.3,
+                endValue: 4,
                 property: 'scale',
             },
             {
                 startValue: 1,
-                endValue: 0.3,
+                endValue: 0,
                 property: 'opacity',
             },
             {
@@ -94,8 +94,8 @@ export const diagramFilesData = [
 
 export const buttonData = [
     {
-        start: 50,
-        end: 300,
+        start: '.section-drawing',
+        end: '.footer',
         properties: [
 
             {
@@ -108,6 +108,72 @@ export const buttonData = [
                 startValue: 400,
                 endValue: 0,
                 property: 'translateY',
+            },
+
+        ],
+    },
+];
+
+export const paperData = [
+    {
+        start: '.section-drawing',
+        end: '.footer',
+        properties: [
+
+            {
+                startValue: 0,
+                endValue: 1,
+                property: 'opacity',
+            },
+
+            {
+                startValue: -100,
+                endValue: 0,
+                property: 'translateY',
+            },
+
+        ],
+    },
+];
+
+export const pencilData = [
+    {
+        start: '.section-drawing',
+        end: '.footer',
+        properties: [
+
+            {
+                startValue: 0,
+                endValue: 1,
+                property: 'opacity',
+            },
+
+            {
+                startValue: -300,
+                endValue: -40,
+                property: 'translateX',
+            },
+
+        ],
+    },
+];
+
+export const backdropData = [
+    {
+        start: '.section-drawing',
+        end: '.footer',
+        properties: [
+
+            {
+                startValue: 0,
+                endValue: 1,
+                property: 'opacity',
+            },
+
+            {
+                startValue: -300,
+                endValue: 0,
+                property: 'translateX',
             },
 
         ],
