@@ -53,7 +53,7 @@ class About extends Component {
                         <Row>
                             <Col xs={12} md={6}>
 
-                                <h2 className="">My focus.</h2>
+                                <h2>My focus.</h2>
                                 <p className="lead text-muted">
                                     My main area of focus is full-stack web development. I design and build websites from concept to completion.
                                 </p>
@@ -113,11 +113,15 @@ class About extends Component {
                                 <Plx
                                     parallaxData={ drawingTextData }
                                 >
-                                    <h3>
+                                    <h2>
                                         Drawing is fundamental.
-                                    </h3>
+                                    </h2>
+                                    <p className="lead text-muted">
+                                        I love to draw. It's always my first step on a new project.
+                                    </p>
                                     <p>
-                                        Lorem ipsum dolor sit amet, wisi mnesarchum percipitur ius cu, melius discere complectitur mea in. Cetero adipiscing ne sit, erat mundi dolores ne nec, populo impetus et sed. Vim impetus scripserit an, ex sea fabulas civibus fabellas, ad omnis exerci minimum pri. Duo ubique ponderum gloriatur eu.
+                                        Drawing helps me get the ideas out my head quickly without wasting time trying to do it all on the computer.
+                                        I don't think any technology will ever replace the ease and efficiency of using paper and pencil to visualize my ideas.
                                     </p>
                                 </Plx>
                             </Col>

@@ -9,6 +9,7 @@ import TSquare from '../t-square';
 import Plx from "react-plx";
 import {
     paperData,
+    graphPaperData,
     pencilData,
     tsquareData
 
@@ -29,6 +30,8 @@ const Drawing = () => {
                 </div>
 
             </Plx>
+
+
             <Plx
                 parallaxData={ pencilData }
                 className="float-left"
@@ -36,7 +39,24 @@ const Drawing = () => {
                 <Pencil/>
 
             </Plx>
+            <Plx
+                parallaxData={ tsquareData }
+                className="float-left"
+            >
+                <TSquare/>
 
+            </Plx>
+
+            <Plx
+                parallaxData={ graphPaperData }
+                className="float-left"
+            >
+                <div className="graph-paper">
+
+
+                </div>
+
+            </Plx>
             <div className="markers float-left">
 
                 <Marker/>
@@ -46,13 +66,7 @@ const Drawing = () => {
             </div>
 
 
-            <Plx
-                parallaxData={ tsquareData }
-                className="float-left"
-            >
-                <TSquare/>
 
-            </Plx>
 
         </div>
 

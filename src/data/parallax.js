@@ -150,6 +150,42 @@ export const paperData = [
     },
 ];
 
+export const graphPaperData = [
+    {
+        start: '.section-drawing',
+        end: '.footer',
+        properties: [
+
+            {
+                startValue: 0,
+                endValue: 1,
+                property: 'opacity',
+            },
+            {
+                startValue: 3,
+                endValue: 1,
+                property: 'scale',
+            },
+            {
+                startValue: -360,
+                endValue: 12,
+                property: 'rotate',
+            },
+            {
+                startValue: -200,
+                endValue: -7,
+                property: 'translateX',
+            },
+            {
+                startValue: 200,
+                endValue: 0,
+                property: 'translateY',
+            },
+
+        ],
+    },
+];
+
 export const pencilData = [
     {
         start: '.section-drawing',

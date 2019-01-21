@@ -99,33 +99,7 @@ main {
     font-weight: 500;
   }
 }
-#icon-files {
-  overflow: visible;
-  animation: pulse 6s ease-in-out infinite;
-  transform: translateY(-5px);
-}
-@keyframes pulse {
-  0% {
-    transform: scale(.9);
-  }
-  50% {
-    transform: scale(1.1);
-  }
-  100% {
-    transform: scale(.9);
-  }
-}
-@keyframes bob {
-  0% {
-    transform: translateY(0) scale(1);
-  }
-  50% {
-    transform: translateY(-3px) scale(1.1);
-  }
-  100% {
-    transform: translateY(0) scale(1);
-  }
-}
+
 @keyframes float {
   0% {
     box-shadow: 0 5px 10px 0 rgba(0,0,0,0.2);
