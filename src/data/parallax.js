@@ -181,7 +181,7 @@ export const pencilData = [
     },
 ];
 
-export const markerData = [
+export const tsquareData = [
     {
         start: '.section-drawing',
         end: '.footer',
@@ -193,7 +193,11 @@ export const markerData = [
                 property: 'opacity',
             },
 
-
+            {
+                startValue: 300,
+                endValue: 0,
+                property: 'translateY',
+            },
         ],
     },
 ];

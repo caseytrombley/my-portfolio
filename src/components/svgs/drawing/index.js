@@ -3,12 +3,14 @@ import './drawing.scss';
 
 import Pencil from '../pencil';
 import Marker from '../marker';
+import TSquare from '../t-square';
+
 
 import Plx from "react-plx";
 import {
     paperData,
     pencilData,
-    markerData
+    tsquareData
 
 } from "../../../data/parallax";
 
@@ -42,6 +44,15 @@ const Drawing = () => {
                 <Marker/>
 
             </div>
+
+
+            <Plx
+                parallaxData={ tsquareData }
+                className="float-left"
+            >
+                <TSquare/>
+
+            </Plx>
 
         </div>
 
