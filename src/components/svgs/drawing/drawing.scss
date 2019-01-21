@@ -1,16 +1,147 @@
-.wrapper {
-  float: left;
-}
+@import "../../../sass/mixins";
+@import "../../../sass/vars";
 
 .paper {
   width: 140px;
   height: 180px;
   background: white;
 }
+.markers {
+  transform: translateX(69px);
+}
+.marker {
+  opacity: 0;
 
-.pencil {
-  width: 10px;
-  height: 50px;
-  background: #ac9124;
+  g {
+    transform-origin: 50% 50%;
+  }
+
+  &:nth-child(1) g {
+    .st0 {
+      fill: #000;
+    }
+    transform:
+        rotate(12deg)
+        translateX(40px)
+        translateY(50px)
+    ;
+  }
+  &:nth-child(2) g {
+    .st0 {
+      fill: #2cb18f;
+    }
+    transform:
+        rotate(-40deg)
+        translateX(40px)
+        translateY(50px)
+    ;
+  }
+  &:nth-child(3) g {
+    .st0 {
+      fill: #5052ee;
+    }
+    transform:
+        rotate(80deg)
+        translateX(40px)
+        translateY(50px)
+    ;
+  }
 
 }
+// drop in markers when in view
+.drawing {
+  .Plx--below {
+    + .markers {
+
+      .marker {
+
+        //@for $i from 1 through 4 {
+        //  &:nth-child(#{$i})  {
+        //
+        //    animation: fall random(700)+ms forwards;
+        //    animation-delay: 50ms;
+        //    animation-timing-function: ease-in-out;
+        //    opacity: 0;
+        //
+        //  }
+        //}
+
+
+        &:nth-child(1)  {
+
+          animation: fall random(500)+ms forwards;
+          animation-delay: random(50)+ms;
+          animation-timing-function: ease-in-out;
+          opacity: 0;
+
+        }
+        &:nth-child(2)  {
+
+          animation: fall2 random(500)+ms forwards;
+          animation-delay: random(50)+ms;
+          animation-timing-function: ease-in-out;
+          opacity: 0;
+
+        }
+        &:nth-child(3)  {
+
+          animation: fall3 random(500)+ms forwards;
+          animation-delay: random(50)+ms;
+          animation-timing-function: ease-in-out;
+          opacity: 0;
+
+        }
+
+      }
+    }
+  }
+}
+
+@keyframes fall {
+  0% {
+    transform: translateY(-200px) scale(4) rotate(-300deg);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0) scale(1) rotate(0deg);
+    opacity: 1;
+  }
+}
+@keyframes fall2 {
+  0% {
+    transform: translateY(300px) scale(3) rotate(300deg);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0) scale(1) rotate(0deg);
+    opacity: 1;
+  }
+}
+@keyframes fall3 {
+  0% {
+    transform: translateX(-200px) scale(6) rotate(-360deg);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0) scale(1) rotate(0deg);
+    opacity: 1;
+  }
+}
+
+//@mixin keyframes-mixin ($name, $translateY, $scale, $rotate) {
+//
+//  @keyframes #{$name} {
+//    0% {
+//      transform: translateY($translateY+px) scale($scale) rotate($rotate+deg);
+//      opacity: 0;
+//    }
+//    100% {
+//      transform: translateY(0) scale(1) rotate(0deg);
+//      opacity: 1;
+//    }
+//  }
+//}
+

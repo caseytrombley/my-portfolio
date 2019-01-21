@@ -125,9 +125,23 @@ export const paperData = [
                 endValue: 1,
                 property: 'opacity',
             },
-
             {
-                startValue: -100,
+                startValue: 3,
+                endValue: 1,
+                property: 'scale',
+            },
+            {
+                startValue: 360,
+                endValue: -15,
+                property: 'rotate',
+            },
+            {
+                startValue: 200,
+                endValue: 50,
+                property: 'translateX',
+            },
+            {
+                startValue: -200,
                 endValue: 0,
                 property: 'translateY',
             },
@@ -147,18 +161,44 @@ export const pencilData = [
                 endValue: 1,
                 property: 'opacity',
             },
-
+            {
+                startValue: 180,
+                endValue: 5,
+                property: 'rotate',
+            },
             {
                 startValue: -300,
-                endValue: -40,
+                endValue: -20,
                 property: 'translateX',
+            },
+            {
+                startValue: 0,
+                endValue: -30,
+                property: 'translateY',
             },
 
         ],
     },
 ];
 
-export const backdropData = [
+export const markerData = [
+    {
+        start: '.section-drawing',
+        end: '.footer',
+        properties: [
+
+            {
+                startValue: 0,
+                endValue: 1,
+                property: 'opacity',
+            },
+
+
+        ],
+    },
+];
+
+export const drawingTextData = [
     {
         start: '.section-drawing',
         end: '.footer',
@@ -171,7 +211,7 @@ export const backdropData = [
             },
 
             {
-                startValue: -300,
+                startValue: 300,
                 endValue: 0,
                 property: 'translateX',
             },
