@@ -15,6 +15,7 @@ const DiagramFiles = () => {
             viewBox="0 0 252 491"
             style={svgStyle}
             id="diagram-files"
+            className="diagram-files"
             xmlSpace="preserve">
 
             <g id="file-stack">

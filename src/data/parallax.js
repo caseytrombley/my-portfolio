@@ -69,7 +69,7 @@ export const pianoData = [
 
 export const diagramFilesData = [
     {
-        start: '#diagram-files',
+        start: '.diagram-files',
         end: 400,
         properties: [
             {

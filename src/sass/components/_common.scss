@@ -11,6 +11,21 @@ p {
 .text-muted {
   color: $light;
 }
+.lead {
+  font-size: 18px;
+  @include breakpoint(md) {
+    font-size: 21px;
+  }
+}
+.btn-primary {
+  background-color: $darkmetal-med;
+  border-color: $darkmetal-dark;
+  font-weight: 500;
+  &:hover {
+    background-color: $darkmetal;
+    border-color: $darkmetal-med;
+  }
+}
 
 .row {
   @include breakpoint(md) {

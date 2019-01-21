@@ -60,7 +60,14 @@
 }
 
 .drawing {
-  transform: translateY(30px);
+  transform: translateX(15%);
+
+  @include breakpoint(sm) {
+    transform: translateX(25%);
+  }
+  @include breakpoint(md) {
+    transform: translateX(0);
+  }
 
   // drop in markers when in view
   .Plx--below {

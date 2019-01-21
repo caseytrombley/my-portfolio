@@ -26,7 +26,7 @@ main {
 .float-left {
   float: left;
 }
-// Docs
+
 .highlight-dark {
   background: rgba(0,0,0, .05);
   margin: 0 -7px 10px;
@@ -121,9 +121,15 @@ main {
 .about {
   background: $background;
   .btn {
-    margin-top: $padding;
+    display: block;
+    margin: $padding-big auto;
   }
-
+  .section-drawing {
+    margin-top: $padding-big;
+    @include breakpoint(md) {
+      margin-top: 0;
+    }
+  }
 }
 
 .portfolio {
