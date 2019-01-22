@@ -141,7 +141,7 @@ export const paperData = [
                 property: 'translateX',
             },
             {
-                startValue: -200,
+                startValue: -100,
                 endValue: 0,
                 property: 'translateY',
             },
