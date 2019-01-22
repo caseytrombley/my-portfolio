@@ -5,6 +5,7 @@ import Footer from "../Footer";
 import SectionIntro from "../sections/section-intro";
 import SectionFocus from '../sections/section-my-focus';
 import SectionDrawing from '../sections/section-drawing';
+import SectionProcess from "../sections/section-process";
 
 class About extends Component {
 
@@ -22,6 +23,8 @@ class About extends Component {
                         <SectionFocus/>
 
                         <SectionDrawing/>
+
+                        <SectionProcess/>
 
                     </Grid>
 

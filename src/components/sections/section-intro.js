@@ -25,7 +25,7 @@ const SectionIntro = () => {
 
 
                 <h3>
-                    Solving problems with good design is what motivates me.
+                    Bringing my visions to life is what motivates me.
                 </h3>
 
                 {/*<p className="lead text-muted">*/}

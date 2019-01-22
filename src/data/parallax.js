@@ -67,46 +67,36 @@ export const pianoData = [
     },
 ];
 
-export const diagramFilesData = [
+export const focusSectionData = [
     {
-        start: '.diagram-files',
-        end: 400,
+        start: '.section-focus',
+        duration: '.section-focus',
         properties: [
-            {
-                startValue: 1.3,
-                endValue: 1,
-                property: 'scale',
-            },
-            {
-                startValue: 0.3,
-                endValue: 1,
-                property: 'opacity',
-            },
-            {
-                startValue: -50,
-                endValue: 0,
-                property: 'translateY',
-            },
+
+
 
         ],
     },
 ];
 
-export const buttonData = [
+export const diagramStackData = [
     {
-        start: '.section-drawing',
-        end: '.footer',
+        start: '.section-focus',
+        duration: '.section-focus',
         properties: [
-
             {
-                startValue: 0,
+                startValue: 1.2,
+                endValue: 1,
+                property: 'scale',
+            },
+            {
+                startValue: 0.5,
                 endValue: 1,
                 property: 'opacity',
             },
-
             {
-                startValue: 400,
-                endValue: 0,
+                startValue: -20,
+                endValue: 80,
                 property: 'translateY',
             },
 
@@ -117,7 +107,7 @@ export const buttonData = [
 export const paperData = [
     {
         start: '.section-drawing',
-        end: '.footer',
+        duration: '.section-drawing',
         properties: [
 
             {
@@ -153,7 +143,7 @@ export const paperData = [
 export const graphPaperData = [
     {
         start: '.section-drawing',
-        end: '.footer',
+        duration: '.section-drawing',
         properties: [
 
             {
@@ -189,7 +179,7 @@ export const graphPaperData = [
 export const pencilData = [
     {
         start: '.section-drawing',
-        end: '.footer',
+        duration: '.section-drawing',
         properties: [
 
             {
@@ -220,7 +210,7 @@ export const pencilData = [
 export const tsquareData = [
     {
         start: '.section-drawing',
-        end: '.footer',
+        duration: '.section-drawing',
         properties: [
 
             {
@@ -241,7 +231,51 @@ export const tsquareData = [
 export const drawingTextData = [
     {
         start: '.section-drawing',
-        end: '.footer',
+        duration: '.section-drawing',
+        properties: [
+
+            {
+                startValue: 0,
+                endValue: 1,
+                property: 'opacity',
+            },
+
+            {
+                startValue: 300,
+                endValue: 0,
+                property: 'translateX',
+            },
+
+        ],
+    },
+];
+
+export const processTextData = [
+    {
+        start: '.section-process',
+        duration: '.section-process',
+        properties: [
+
+            {
+                startValue: 0,
+                endValue: 1,
+                property: 'opacity',
+            },
+
+            {
+                startValue: -300,
+                endValue: 0,
+                property: 'translateX',
+            },
+
+        ],
+    },
+];
+
+export const processSVGData = [
+    {
+        start: '.section-process',
+        duration: '.section-process',
         properties: [
 
             {

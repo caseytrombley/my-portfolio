@@ -1,0 +1,75 @@
+@import "../../../sass/mixins";
+@import "../../../sass/vars";
+
+.diagram-stack {
+  .stack-panels {
+    width: 40%;
+    @include breakpoint(md) {
+      width: 80%;
+    }
+  }
+}
+.Plx--in {
+  .diagram-stack {
+    opacity: 1;
+    position: relative;
+    .stack-panels {
+
+      g {
+        @for $i from 1 through 5 {
+          &:nth-child(#{$i})  {
+
+            polygon {
+
+              transform: translateY(-1000px);
+              animation: stack 400ms forwards;
+              animation-delay: $i * 100ms;
+              animation-timing-function: ease-in-out;
+              opacity: 0;
+
+              &.st0 {
+                fill: nth($stackwards, $i);
+              }
+            }
+
+          }
+        }
+      }
+
+
+
+    }
+  }
+}
+
+.Plx--below {
+  .diagram-stack {
+
+    .stack-panels {
+
+      g {
+        @for $i from 1 through 5 {
+          &:nth-child(#{$i})  {
+
+            polygon {
+
+              //transform: translateY(0);
+              animation: stackup 500ms forwards;
+              animation-delay: $i * 100ms;
+              animation-timing-function: ease-in-out;
+              //opacity: 0;
+
+              &.st0 {
+                fill: nth($stackwards, $i);
+              }
+            }
+
+          }
+        }
+      }
+
+
+
+    }
+  }
+}

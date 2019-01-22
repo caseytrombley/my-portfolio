@@ -52,9 +52,14 @@ main {
   margin-bottom: $padding;
 }
 
-.vertical-text {
-  transform: rotate(-90deg);
-  transform-origin: 50% 50%;
+.justify-vertical {
+  @include breakpoint(md) {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+  }
+
 }
 
 // Pages
@@ -93,6 +98,7 @@ main {
   box-shadow: 0 2px 5px 0 rgba(0,0,0,0.2);
   transform: translateY(0);
 }
+
 .media {
   overflow: visible;
   .media-left {
@@ -103,26 +109,16 @@ main {
   }
 }
 
-@keyframes float {
-  0% {
-    box-shadow: 0 5px 10px 0 rgba(0,0,0,0.2);
-    transform: translateY(0);
-  }
-  50% {
-    box-shadow: 0 15px 10px 0 rgba(0,0,0,0.05);
-    transform: translateY(-6px);
-  }
-  100% {
-    box-shadow: 0 5px 10px 0 rgba(0,0,0,0.2);
-    transform: translateY(0);
-  }
-}
+
 
 main {
   background: $background-lighter;
 }
 .about {
   background: $background;
+  .row {
+    margin-bottom: $padding-big*2;
+  }
   .btn {
     display: block;
     margin: $padding-big auto;

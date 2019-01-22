@@ -1,12 +1,12 @@
 import React from 'react';
 import {Col, Row} from "react-bootstrap";
 import {NavLink} from "react-router-dom";
-import Plx from "react-plx";
-import {diagramFilesData} from "../../data/parallax";
-import DiagramFiles from "../svgs/diagram-files";
-import DiagramBlocks from "../svgs/diagram-blocks";
-
 import {Media} from "react-breakpoints";
+
+import DiagramPuzzle from "../svgs/diagram-puzzle";
+import DiagramStack from "../svgs/diagram-stack";
+import {diagramStackData, focusSectionData} from "../../data/parallax";
+import Plx from "react-plx";
 
 
 const Column1 = () => {
@@ -23,13 +23,10 @@ const Column1 = () => {
             </p>
 
             <p>
-                As someone with a love for learning, I am always on the cutting edge of technology and trying new things. I love to tinker and see what amazing things are possible.
+                As someone with a love for learning, I am always trying new things. Discovering new technique is something I enjoy as much as creating new ideas. When I am presented a challenge I know how to start small and break it down piece by piece using solid fundamentals.
             </p>
 
-
-
-            <DiagramBlocks/>
-
+            <DiagramPuzzle/>
 
             <NavLink
                 exact
@@ -40,50 +37,66 @@ const Column1 = () => {
                 Learn more about my skills
             </NavLink>
 
-
-
-
         </Col>
     )
 };
-const Column2 = () => {
+
+// const Column2 = () => {
+//     return (
+//         <Col xs={12} md={6} className="text-center">
+//
+//             <Plx
+//                 parallaxData={ diagramFilesData }
+//                 className="diagram"
+//             >
+//                 <DiagramFiles/>
+//             </Plx>
+//
+//
+//         </Col>
+//     )
+// };
+const Column3 = () => {
     return (
         <Col xs={12} md={6} className="text-center">
 
             <Plx
-                parallaxData={ diagramFilesData }
-                className="diagram"
+                parallaxData={ diagramStackData }
             >
-                <DiagramFiles/>
+                <DiagramStack/>
             </Plx>
+
 
 
         </Col>
     )
 };
-
 const SectionFocus = () => {
     return (
+        <Plx
+            parallaxData={ focusSectionData }
+        >
+            <Row className="section-focus">
 
-        <Row className="section-focus">
+                <Media>
+                    {({ breakpoints, currentBreakpoint }) =>
+                        breakpoints[currentBreakpoint] > breakpoints.tablet ? (
+                            <React.Fragment>
+                                <Column1/>
+                                <Column3/>
+                            </React.Fragment>
+                        ) : (
+                            <React.Fragment>
+                                <Column3/>
+                                <Column1/>
+                            </React.Fragment>
+                        )
+                    }
+                </Media>
 
-            <Media>
-                {({ breakpoints, currentBreakpoint }) =>
-                    breakpoints[currentBreakpoint] > breakpoints.tablet ? (
-                        <React.Fragment>
-                            <Column1/>
-                            <Column2/>
-                        </React.Fragment>
-                    ) : (
-                        <React.Fragment>
-                            <Column2/>
-                            <Column1/>
-                        </React.Fragment>
-                    )
-                }
-            </Media>
+            </Row>
 
-        </Row>
+        </Plx>
 
     );
 };

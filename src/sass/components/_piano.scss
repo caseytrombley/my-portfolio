@@ -1,3 +1,5 @@
+@import '../mixins';
+
 #piano-keys {
   rect {
     transform-origin: 50% 50%;
@@ -33,23 +35,5 @@
       }
     }
 
-    @keyframes implode {
-
-      to {
-        transform: rotate(0deg) translateY(0) translateX(0);
-        opacity: 0.3;
-      }
-    }
-    @keyframes drop {
-
-      to {
-        transform: translateY(0px);
-        opacity: 0.4;
-      }
-    }
-
-
   }
-
-
 }

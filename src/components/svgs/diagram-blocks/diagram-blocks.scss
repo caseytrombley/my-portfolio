@@ -1,8 +1,16 @@
+@import "../../../sass/mixins";
+@import "../../../sass/vars";
 
 #diagram-blocks {
 
   margin-top: 30px;
   width: 100%;
+
+  > path {
+    animation: fluff 6s ease-in-out infinite;
+    transform: translateY(0);
+    transform-origin: 50% 50%;
+  }
 
   .st0{fill:#050709;}
   .st1{fill:#D2D3D5;}
