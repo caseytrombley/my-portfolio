@@ -4,8 +4,10 @@ import {NavLink} from "react-router-dom";
 import Plx from "react-plx";
 import {diagramFilesData} from "../../data/parallax";
 import DiagramFiles from "../svgs/diagram-files";
+import DiagramBlocks from "../svgs/diagram-blocks";
 
 import {Media} from "react-breakpoints";
+
 
 const Column1 = () => {
     return (
@@ -21,16 +23,12 @@ const Column1 = () => {
             </p>
 
             <p>
-                I built this website with <strong>React</strong>, <strong>Javascript</strong>, <strong>HTML5</strong>, <strong>CSS3</strong> and <strong>Animated SVG</strong>. Some of the nuts and bolts are from Bootstrap and other various Javascript libraries.
+                As someone with a love for learning, I am always on the cutting edge of technology and trying new things. I love to tinker and see what amazing things are possible.
             </p>
 
-            <p>
-                The latest technology I like to work with is the <strong>MERN</strong> stack, although I am seasoned in older technologies such as the <strong>LAMP</strong> stack.
-            </p>
-            <p>
-                The tools I use are all cutting edge. Programs like <strong>git</strong> allow me to easily manage my source code, and <strong>Node</strong> along with <strong>Express</strong> allows me to do server magic within my applications.
-            </p>
 
+
+            <DiagramBlocks/>
 
 
             <NavLink

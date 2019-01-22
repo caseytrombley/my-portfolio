@@ -16,7 +16,7 @@ const Column1 = () => {
         </Col>
     )
 };
-const Column1_Mobile = () => {
+const Column1Mobile = () => {
     return (
         <Col xs={12} md={6}>
 
@@ -33,14 +33,14 @@ const Column2 = () => {
                 parallaxData={ drawingTextData }
             >
                 <h2>
-                    Drawing is fundamental.
+                    Drawing is important.
                 </h2>
                 <p className="lead text-muted">
-                    I love to draw. It's always my first step on a new project.
+                    It's a great starting point to communicate your vision.
                 </p>
                 <p>
-                    Drawing helps me get the ideas out my head quickly without wasting time trying to do it all on the computer.
-                    I don't think any technology will ever replace the ease and efficiency of using paper and pencil to visualize my ideas.
+                    Drawing helps me get ideas down quickly without wasting time at the computer.
+                    I don't think any technology could replace the facility of using paper and pencil to visualize ideas.
                 </p>
             </Plx>
         </Col>
@@ -61,7 +61,7 @@ const SectionDrawing = () => {
                     ) : (
                         <React.Fragment>
 
-                            <Column1_Mobile/>
+                            <Column1Mobile/>
                             <Column2/>
                         </React.Fragment>
                     )
