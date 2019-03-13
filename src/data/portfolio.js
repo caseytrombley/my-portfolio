@@ -1,6 +1,46 @@
 export const logosData = [
 
     {
+        src: "../images/logos/grm1-01.png",
+        thumbnail: "../images/logos/thumbnails/grm1-01.png",
+        thumbnailWidth: 150,
+        thumbnailHeight: 100,
+        caption: "GRM US Digital - Logo contest submission for my company's department"
+    },
+
+    {
+        src: "../images/logos/grm2-01.png",
+        thumbnail: "../images/logos/thumbnails/grm2-01.png",
+        thumbnailWidth: 150,
+        thumbnailHeight: 100,
+        caption: "GRM US Digital - Logo contest submission for my company's department"
+    },
+
+    {
+        src: "../images/logos/grm3-01.png",
+        thumbnail: "../images/logos/thumbnails/grm3-01.png",
+        thumbnailWidth: 150,
+        thumbnailHeight: 100,
+        caption: "GRM US Digital - Logo contest submission for my company's department"
+    },
+
+    {
+        src: "../images/logos/grm4-01.png",
+        thumbnail: "../images/logos/thumbnails/grm4-01.png",
+        thumbnailWidth: 150,
+        thumbnailHeight: 100,
+        caption: "GRM US Digital - Logo contest submission for my company's department"
+    },
+
+    {
+        src: "../images/logos/grm5-01.png",
+        thumbnail: "../images/logos/thumbnails/grm5-01.png",
+        thumbnailWidth: 150,
+        thumbnailHeight: 100,
+        caption: "GRM US Digital - Logo contest submission for my company's department"
+    },
+
+    {
         src: "../images/logos/agentportal-01.png",
         thumbnail: "../images/logos/thumbnails/agentportal-01.png",
         thumbnailWidth: 150,
